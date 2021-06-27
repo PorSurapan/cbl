@@ -1,0 +1,32 @@
+input[type=text], input[list=word], select, textarea {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #ffffff;
+    border: none;
+    color: white;
+    padding: 9px 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: rgb(34, 34, 34); 
+    border: 2px solid #8d8d8d;
+  }

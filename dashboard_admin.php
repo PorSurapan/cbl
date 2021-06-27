@@ -1,4 +1,14 @@
-<!doctype html>
+<?php
+	session_start();
+
+	if(isset($_SESSION['s_username']) && $_SESSION['logged'] == true) {
+		//include('')
+    } else {
+        echo '<script type="text/javascript">';
+		echo 'if(!alert("กรุณาเข้าสู่ระบบก่อน (หากพบปัญหา โปรดติดต่อผู้ดูแลระบบ)")) document.location = "/cbl/home/index.html";';
+		echo '</script>';
+    }
+?>
 
 <html lang="th">
 
@@ -26,34 +36,20 @@
 			</div>
 
 			<div class="p-4 pt-5">
-				<h3><a href="index.html" class="logo">Database Management with PHP</a></h3>
+				<h3><a href="index.html" class="logo">Admin Dashboard</a></h3>
 
 				<ul class="list-unstyled components mb-5">
 
 					<!-- Profile -->
 					<li class="active">
-						<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">โปรไฟล์</a>
+						<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ภาพรวม</a>
 						
 						<ul class="collapse list-unstyled" id="homeSubmenu">
 							<li>
-								<a href="#">ข้อมูลส่วนตัว</a>
+								<a href="all_learner.php">ผู้เรียนทั้งหมด</a>
 							</li>
-							<li>
-								<a href="/cbl/home/index.html">ออกจากระบบ</a>
-							</li>
-						</ul>
-					</li>
-
-					<!-- Introduction -->
-					<li>
-						<a href="#pageSubmenuIntro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">บทนำ</a>
-						
-						<ul class="collapse list-unstyled" id="pageSubmenuIntro">
-							<li>
-								<a href="content.html">เนื้อหา</a>
-							</li>
-							<li>
-								<a href="tool.html">เตรียมเครื่องมือ</a>
+                            <li>
+								<a href="#">สถิติ</a>
 							</li>
 						</ul>
 					</li>
@@ -67,10 +63,10 @@
 								<a href="#">แบบทดสอบก่อนเรียน</a>
 							</li>
 							<li>
-								<a href="#">ความรู้เบื้องต้น phpMyAdmin</a>
+								<a href="#">แบบทดสอบหลังเรียน</a>
 							</li>
 							<li>
-								<a href="#">แบบทดสอบหลังเรียน</a>
+								<a href="#">ภาพรวม</a>
 							</li>
 						</ul>
 					</li>
@@ -80,14 +76,14 @@
 						<a href="#pageSubmenuConn" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">การเชื่อมต่อฐานข้อมูล</a>
 						
 						<ul class="collapse list-unstyled" id="pageSubmenuConn">
-							<li>
+                            <li>
 								<a href="#">แบบทดสอบก่อนเรียน</a>
 							</li>
 							<li>
-								<a href="#">การเชื่อมต่อฐานข้อมูล</a>
+								<a href="#">แบบทดสอบหลังเรียน</a>
 							</li>
 							<li>
-								<a href="#">แบบทดสอบหลังเรียน</a>
+								<a href="#">ภาพรวม</a>
 							</li>
 						</ul>
 					</li>
@@ -97,17 +93,14 @@
 						<a href="#pageSubmenuAdd" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">การเพิ่มข้อมูล</a>
 						
 						<ul class="collapse list-unstyled" id="pageSubmenuAdd">
-							<li>
+                            <li>
 								<a href="#">แบบทดสอบก่อนเรียน</a>
 							</li>
 							<li>
-								<a href="#">เพิ่มข้อมูลด้วย PHP</a>
-							</li>
-							<li>
-								<a href="#">เพิ่มข้อมูลด้วย PHP & AJAX</a>
-							</li>
-							<li>
 								<a href="#">แบบทดสอบหลังเรียน</a>
+							</li>
+							<li>
+								<a href="#">ภาพรวม</a>
 							</li>
 						</ul>
 					</li>
@@ -117,17 +110,14 @@
 						<a href="#pageSubmenuShow" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">การแสดงข้อมูล</a>
 						
 						<ul class="collapse list-unstyled" id="pageSubmenuShow">
-							<li>
+                            <li>
 								<a href="#">แบบทดสอบก่อนเรียน</a>
 							</li>
 							<li>
-								<a href="#">แสดงข้อมูลด้วย PHP</a>
-							</li>
-							<li>
-								<a href="#">แสดงข้อมูลด้วย PHP & AJAX</a>
-							</li>
-							<li>
 								<a href="#">แบบทดสอบหลังเรียน</a>
+							</li>
+							<li>
+								<a href="#">ภาพรวม</a>
 							</li>
 						</ul>
 					</li>
@@ -137,17 +127,14 @@
 						<a href="#pageSubmenuEdit" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">การแก้ไขข้อมูล</a>
 						
 						<ul class="collapse list-unstyled" id="pageSubmenuEdit">
-							<li>
+                            <li>
 								<a href="#">แบบทดสอบก่อนเรียน</a>
 							</li>
 							<li>
-								<a href="#">แก้ไขข้อมูลด้วย PHP</a>
-							</li>
-							<li>
-								<a href="#">แก้ไขข้อมูลด้วย PHP & AJAX</a>
-							</li>
-							<li>
 								<a href="#">แบบทดสอบหลังเรียน</a>
+							</li>
+							<li>
+								<a href="#">ภาพรวม</a>
 							</li>
 						</ul>
 					</li>
@@ -157,17 +144,14 @@
 						<a href="#pageSubmenuDel" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">การลบข้อมูลด้วย</a>
 						
 						<ul class="collapse list-unstyled" id="pageSubmenuDel">
-							<li>
+                            <li>
 								<a href="#">แบบทดสอบก่อนเรียน</a>
 							</li>
 							<li>
-								<a href="#">ลบข้อมูลด้วย PHP</a>
-							</li>
-							<li>
-								<a href="#">ลบข้อมูลด้วย PHP & AJAX</a>
-							</li>
-							<li>
 								<a href="#">แบบทดสอบหลังเรียน</a>
+							</li>
+							<li>
+								<a href="#">ภาพรวม</a>
 							</li>
 						</ul>
 					</li>
@@ -177,14 +161,14 @@
 						<a href="#">แบบทดสอบท้ายการเรียน</a>
 					</li>
 
-					<!-- About -->
+					<!-- Logout -->
 					<li>
-						<a href="about.html">เกี่ยวกับ</a>
+                        <a href="/cbl/home/logout.php">ออกจากระบบ</a></li>
 					</li>
 				</ul>
 
 				<!-- Not use -->
-				<div class="mb-5">
+				<!-- <div class="mb-5">
 					<h3 class="h6">Subscribe for newsletter</h3>
 					<form action="#" class="colorlib-subscribe-form">
 						<div class="form-group d-flex">
@@ -192,7 +176,7 @@
 							<input type="text" class="form-control" placeholder="Enter Email Address">
 						</div>
 					</form>
-				</div>
+				</div> -->
 				
 
 				<div class="footer">
@@ -210,7 +194,7 @@
 
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
-			<h2 class="mb-4">Sidebar #02</h2>
+			<h2 class="mb-4">Admin Dashboard</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
