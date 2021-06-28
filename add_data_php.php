@@ -23,7 +23,8 @@
 		<div id="content" class="p-4 p-md-5 pt-5">
 			<h2 class="mb-4">การเพิ่มข้อมูลด้วย PHP</h2>
             <div style="text-align:center;">
-			    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/C0jbORP0eJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+			<!-- ใส่คลิป  -->
+			    <p></p>
             </div>
 
             <h4>การใช้คำสั่งในการ INSERT ข้อมูลลงฐานข้อมูล</h4>

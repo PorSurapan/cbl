@@ -23,6 +23,7 @@
 		<div id="content" class="p-4 p-md-5 pt-5">
 			<h2 class="mb-4">การแสดงข้อมูลด้วย PHP & AJAX</h2>
             <div style="text-align:center;">
+			<!-- ใส่คลิป  -->
 			    <p></p>
             </div>
 
