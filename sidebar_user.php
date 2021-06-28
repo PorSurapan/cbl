@@ -35,7 +35,7 @@
                         <a href="content.php">เนื้อหา</a>
                     </li>
                     <li>
-                        <a href="tools.html">เตรียมเครื่องมือ</a>
+                        <a href="tools.php">เตรียมเครื่องมือ</a>
                     </li>
                 </ul>
             </li>
