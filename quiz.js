@@ -3,9 +3,9 @@ function check(){
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
-    // var question4 = document.quiz.question4.value;
-    // var question5 = document.quiz.question5.value;
-    // var question6 = document.quiz.question6.value;
+     var question4 = document.quiz.question4.value;
+     var question5 = document.quiz.question5.value;
+     var question6 = document.quiz.question6.value;
 
     var correct1 = 0;
     var correct2 = 0;
@@ -41,32 +41,34 @@ function check(){
     }
 
     // Question 4
-    // if(question4 == "") {
-    //     document.getElementById("cotext4")
-    //     correct4 = 1;
-    // } else {
-    //     document.getElementById("inctext4")
-    // }
+     if(question4 == "") {
+         document.getElementById("cotext4")
+         correct4 = 1;
+     } else {
+         document.getElementById("inctext4")
+     }
 
     // Question 5
-    // if(question5 == "") {
-    //     document.getElementById("cotext5")
-    //     correct5 = 1;
-    // } else {
-    //     document.getElementById("inctext5")
-    // }
+     if(question5 == "") {
+         document.getElementById("cotext5")
+         correct5 = 1;
+     } else {
+         document.getElementById("inctext5")
+     }
 
     //  Question 6
-    // if(question6 == "CREATE TABLE") {
-    //     document.getElementById("cotext6")
-    //     correct6 = 1;
-    // } else {
-    //     document.getElementById("inctext6")
-    // }
+     if(question6 == "CREATE TABLE") {
+         document.getElementById("cotext6")
+         correct6 = 1;
+     } else {
+         document.getElementById("inctext6")
+     }
     
     // Display
     var point = correct1 + correct2 + correct3 + correct4 + correct5 + correct6;
 
     document.getElementById("after_submit").style.visibility = "visible";
     document.getElementById("number_correct").innerHTML = "คุณได้ " + point + " คะแนนจากทั้งหมด 12 คะแนน";
+    document.getElementById("point").value = point;
+    
 }

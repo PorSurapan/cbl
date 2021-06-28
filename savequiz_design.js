@@ -1,0 +1,26 @@
+var xmlHttp;
+
+function createXMLHttpRequest() {
+    if (window.ActiveXObject)
+        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    else
+        xmlHttp = new XMLHttpRequest();
+}
+
+function stateChange() {
+    if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
+        var allText = xmlHttp.responseText;
+        
+        
+    }
+}
+
+function savequiz(id,point)
+{
+    createXMLHttpRequest();
+    xmlHttp.onreadystatechange = stateChange;
+    var url = "save_design.php";
+    url = url + "?id=" + id + "?point" + point;
+    xmlHttp.open("GET", url, true);
+    xmlHttp.send(null);
+}

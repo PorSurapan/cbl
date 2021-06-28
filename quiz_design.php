@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="quiz.js"></script>
+    <script src="savequiz_design.js"></script>
 </head>
 
 <body>
@@ -54,9 +55,34 @@
                 <input type = "radio" name = "question3" value = "DESTROY DATABASE testDB"> DESTROY DATABASE testDB<br><br>
                 <input type = "radio" name = "question3" value = "CLOSE DATABASE testDB"> CLOSE DATABASE testDB<br><br>
                 <p id="checkQ3"></p>
-                <br><br>
+                <br>
 
-                <input class="button" type="button" id="button" value="ยืนยันคำตอบ" onclick="check();">
+                <h5><br>เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบตารางที่ชื่อว่า Persons<br><br></h5>
+                <input type = "radio" name = "question3" value = "DESTROY TABLE Persons"> DESTROY TABLE Persons<br><br>
+                <input type = "radio" name = "question3" value = "CLOSE TABLE Persons"> CLOSE TABLE Persons<br><br>
+                <input type = "radio" name = "question3" value = "DROP TABLE Persons"> DROP TABLE Persons<br><br>
+                <input type = "radio" name = "question3" value = "DELETE TABLE Persons"> DELETE TABLE Persons<br><br>
+                <p id="checkQ3"></p>
+                <br>
+
+                <h5><br>เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบฐานข้อมูลที่ชื่อ testDB<br><br></h5>
+                <input type = "radio" name = "question3" value = "DROP DATABASE testDB"> DROP DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "DELETE DATABASE testDB"> DELETE DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "DESTROY DATABASE testDB"> DESTROY DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "CLOSE DATABASE testDB"> CLOSE DATABASE testDB<br><br>
+                <p id="checkQ3"></p>
+                <br>
+
+                <h5><br>เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบฐานข้อมูลที่ชื่อ testDB<br><br></h5>
+                <input type = "radio" name = "question3" value = "DROP DATABASE testDB"> DROP DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "DELETE DATABASE testDB"> DELETE DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "DESTROY DATABASE testDB"> DESTROY DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "CLOSE DATABASE testDB"> CLOSE DATABASE testDB<br><br>
+                <p id="checkQ3"></p>
+                <br>
+                
+                <input type="hidden" id="point" name="point" >
+                <input class="button" type="button" id="button" value="ยืนยันคำตอบ" onclick="check();savequiz(<?php $_SESSION["s_id"]; ?>,point.value);">
             </form>
             
             <div id="after_submit">
