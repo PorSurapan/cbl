@@ -32,9 +32,16 @@
 
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
-			<h2 class="mb-4">Sidebar #02</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h2 class="mb-4">บทเรียน PHP</h2>
+			<p>เว็บไซต์นี้จัดทำขึ้นเพื่อใช้ประกอบการเรียนการสอนในรายวิชา 214374
+วิชา คอมพิวเตอร์เพื่อการเรียนรู้ ซึ่งประกอบด้วยความรู้ในแต่ละบท คลิปวิดีโอ แบบทดสอบก่อนเรียน
+และแบบทดสอบหลังเรียน ประกอบด้วย 6 หน่วยการเรียนรู้</p>
+			<p>หน่วยที่ 1 การออกแบบฐานข้อมูล&nbsp;&nbsp;</p>
+			<p>หน่วยที่ 2 การเชื่อมต่อฐานข้อมูล&nbsp;&nbsp;</p>
+			<p>หน่วยที่ 3 การเพิ่มข้อมูล&nbsp;&nbsp;</p>
+			<p>หน่วยที่ 4 การแสดงข้อมูล&nbsp;&nbsp;</p>
+			<p>หน่วยที่ 5 การแก้ไขข้อมูล&nbsp;&nbsp;</p>
+			<p>หน่วยที่ 6 การลบข้อมูลด้วย&nbsp;&nbsp;</p>
 		</div>
 	</div>
 
