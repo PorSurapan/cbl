@@ -15,10 +15,17 @@
 
 <body>
 	
+<<<<<<< HEAD
     
 	<div class="wrapper d-flex align-items-stretch">
 		<!-- include sidebar -->
         <?php include ('sidebar_user.php'); ?>
+=======
+
+	<div class="wrapper d-flex align-items-stretch">
+		
+    <?php include ('sidebar_user.php'); ?>
+>>>>>>> 4e79932cb4cec9f655015ff05d04e01801048757
 
 
 		<!-- Page Content  -->
