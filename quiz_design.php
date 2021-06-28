@@ -35,27 +35,32 @@
         
 
             <form id="quiz" name="quiz">
+               
+                <h5><br>เขียนคำสั่ง SQL ที่ถูกต้องเพื่อสร้างฐานข้อมูลใหม่ที่ชื่อว่า testDB<br><br></h5>
+                <input type="text" id="textbox1" name="question1"> ;
+                <br><br>
+                
                 <h5><br>เขียนคำสั่ง SQL ที่ถูกต้องเพื่อสร้างตารางใหม่ที่ชื่อว่า Persons.<br><br></h5>
-
-                <input type="text" id="textbox" name="question1"> (
+                <input type="text" id="textbox2" name="question2"> (
                 <h6><br>PersonID int,</h6>
                 <h6><br>Lastname varchar(255),</h6>
                 <h6><br>Firstname varchar(255),</h6>
                 <h6><br>Address varchar(255),<br><br></h6>
-                <input type="button" id="button" value="ตรวจคำตอบ" onclick="check();">
-            </form>
-        </div>
-<<<<<<< HEAD
-        <div id="after_submit">       
-                <p id="number_correct"><p>
-        </div>
-    </body>
-=======
-    </div>
+                <input class="button" type="button" id="button" value="ยืนยันคำตอบ" onclick="check();">
 
-    <div id="after_submit">       
-        <p id="number_correct"><p>
-    </div>
+                <h5><br>เขียนคำสั่ง SQL ที่ถูกต้องเพื่อสร้างฐานข้อมูลใหม่ที่ชื่อว่า testDB<br><br></h5>
+                <input type = "radio" id = "mc" name = "question2" value = "Hartford"><br>
+                <br><br>
+
+
+            </form>
+            <div id="after_submit">
+                <h4 id="number_correct"></h4>
+                </div>
+        </div>
+        </div>       
+           
+    </body>
 
     <script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
@@ -63,5 +68,4 @@
 	<script src="js/main.js"></script>
     
 </body>
->>>>>>> c9560ec52182f35faca4b492bb3302fbef126663
 </html>
