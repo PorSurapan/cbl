@@ -7,7 +7,7 @@
     $con->query("SET NAMES UTF8");
 
     if ($word != null)
-        $sql = "SELECT username, name FROM profiles WHERE username LIKE '%$word%' OR name LIKE '%$word%'";
+        $sql = "SELECT username, name FROM profiles WHERE (id != 1) AND (username LIKE '%$word%' OR name LIKE '%$word%')";
     else
         $sql = "SELECT username, name FROM profiles WHERE id = 0";
 
