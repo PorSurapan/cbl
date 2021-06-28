@@ -49,7 +49,7 @@
                         <a href="#">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">ความรู้เบื้องต้น phpMyAdmin</a>
+                        <a href="introphpmyadmin.php">ความรู้เบื้องต้น phpMyAdmin</a>
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
