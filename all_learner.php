@@ -10,7 +10,7 @@
     }
 ?>
 
-<html lang="th">
+<html>
 
 <head>
 	<title>All Learners</title>
@@ -22,9 +22,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
     <link rel="stylesheet" href="css/dashboard.css">
 	<script src="searchUser.js"></script>
@@ -106,19 +106,19 @@
 							if($search == "")
 							{
 								if($sort == "เรียงตามผู้ลงทะเบียนล่าสุด")
-									$sql = "SELECT * FROM profiles ORDER BY id DESC";
+									$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY id DESC";
 								else if($sort == "เรียงตามผู้ลงทะเบียนเก่าสุด")
-									$sql = "SELECT * FROM profiles ORDER BY id ASC";
+									$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY id ASC";
 								else if($sort == "เรียงตามตัวอักษร (ชื่อผู้ใช้)")
-									$sql = "SELECT * FROM profiles ORDER BY username";
+									$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY username";
 								else if($sort == "เรียงตามตัวอักษร (ชื่อ - นามสกุล)")
-									$sql = "SELECT * FROM profiles ORDER BY name";
+									$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY name";
 								else
-									$sql = "SELECT * FROM profiles ORDER BY process DESC";
+									$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY process DESC";
 							}
 							else
 							{
-								$sql = "SELECT * FROM profiles WHERE username LIKE '%$search%' OR name LIKE '%$search%'";
+								$sql = "SELECT * FROM profiles WHERE (id != 1) AND (username LIKE '%$search%' OR name LIKE '%$search%')";
 							}
 
 							
