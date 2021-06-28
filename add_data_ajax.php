@@ -26,23 +26,7 @@
 			    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9tfbVK22KLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             </div>
 
-            <h4>การใช้คำสั่งในการ INSERT ข้อมูลลงฐานข้อมูล</h4>
-            <h6 style="text-indent: 2.5em;">เราจะทำการสร้าง ฟอร์มรับข้อมูลไว้ในไฟล์ form.php หลังจากนั้นจะให้ส่งค่าไปยัง ไฟล์ save.php เพื่อทำการ insert ข้อมูลลงฐานข้อมูล ในการสร้างไฟล์ save.php เราจะต้องมีการเชื่อมต่อกับฐานข้อมูลขึ้นมาก่อน connect.php  เมื่อทำการ insert จะนำข้อมูลไปแสดง ในหน้า list.php</h6>
-            <h6 style="text-indent: 2.5em;">ในตัวอย่างเราจะทำการ INSERT ข้อมูลลงใน ตาราง test สิ่งเเรกก่อนเราจะต้องทำการสร้างตารางเพื่อรับข้อมูล</h6><br>
             
-            <img src="/cbl/images/db.png" width="800"><br><br><br>
-
-            <h6 style="text-indent: 2.5em;">จากนั้นทำการสร้าง form ตามโครงสร้างของตาราง</h6>
-            <h6 style="text-indent: 2.5em;">เราจะเห็นว่ามีการ ส่งค่า  method="post" ไปยังไฟล์ save.php ส่วน enctype="multipart/form-data เป็นการกำหนดให้ฟอร์มนี้มีการเก็บข้อมูลได้หลายประเภท</h6><br>
-            <img src="/cbl/images/form.png" width="800"><br><br><br>
-
-            <h6 style="text-indent: 2.5em;">ก่อนจะไปทำงานที่ไฟล์ save.php จะต้องทำการเชื่อมต่อกับ database เสียก่อน</h6>
-            <img src="/cbl/images/connect_db2.PNG" width="800"><br><br><br>
-
-            <h6 style="text-indent: 2.5em;">จากนั้นให้สร้างไฟล์ save.php โดยใส่ require_once'connect.php' เพื่อใช้งานฐานข้อมูล</h6>
-            <h6 style="text-indent: 2.5em;">คำสั่ง INSERT INTO ก็คือการเพิ่มข้อมูลจากฟอร์มลงฐานข้อมูลนั่นเอง</h6>
-            <img src="/cbl/images/insert.PNG" width="800"><br><br><br>
-
 
            
 
