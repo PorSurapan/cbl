@@ -33,6 +33,6 @@
         </div>
         <div id="after_submit">       
                 <p id="number_correct"><p>
-                </div>
+        </div>
     </body>
 </html>
