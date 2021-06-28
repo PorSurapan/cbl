@@ -35,7 +35,7 @@
                         <a href="content.php">เนื้อหา</a>
                     </li>
                     <li>
-                        <a href="tools.html">เตรียมเครื่องมือ</a>
+                        <a href="tools.php">เตรียมเครื่องมือ</a>
                     </li>
                 </ul>
             </li>
@@ -49,7 +49,7 @@
                         <a href="quiz_design.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">ความรู้เบื้องต้น phpMyAdmin</a>
+                        <a href="introphpmyadmin.php">ความรู้เบื้องต้น phpMyAdmin</a>
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>

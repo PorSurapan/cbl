@@ -15,9 +15,29 @@
 
 <body>
 	
+<<<<<<< HEAD:tools.php
 	<div class="wrapper d-flex align-items-stretch">
 		
     <?php include ('sidebar_user.php'); ?>
+=======
+<div class="wrapper d-flex align-items-stretch">
+	<!-- Include sidebar -->
+    <?php include('sidebar_user.php'); ?>
+				
+
+				<div class="footer">
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+						All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by 
+						<a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+
+			</div>
+		</nav>
+>>>>>>> 92fa8e0f0a89d752ce4a38fdb3038a4a0eaf2442:tools.html
 
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
@@ -110,6 +130,7 @@
             <img src="/cbl/images/xampp11.jpg" width="600"><br><br><br>
         </div>
 	</div>
+
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
