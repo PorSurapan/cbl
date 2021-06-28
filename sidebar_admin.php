@@ -32,7 +32,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuDB">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="pretest_quiz_design.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>

@@ -49,17 +49,19 @@
                 
 
                 <h5><br>เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบฐานข้อมูลที่ชื่อ testDB<br><br></h5>
-                <input type = "radio" id = "mc" name = "question3" value = "DROP DATABASE testDB"> DROP DATABASE testDB<br><br>
-                <input type = "radio" id = "mc" name = "question3" value = "DELETE DATABASE testDB"> DELETE DATABASE testDB<br><br>
-                <input type = "radio" id = "mc" name = "question3" value = "DESTROY DATABASE testDB"> DESTROY DATABASE testDB<br><br>
-                <input type = "radio" id = "mc" name = "question3" value = "CLOSE DATABASE testDB"> CLOSE DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "DROP DATABASE testDB"> DROP DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "DELETE DATABASE testDB"> DELETE DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "DESTROY DATABASE testDB"> DESTROY DATABASE testDB<br><br>
+                <input type = "radio" name = "question3" value = "CLOSE DATABASE testDB"> CLOSE DATABASE testDB<br><br>
+                <p id="checkQ3"></p>
                 <br><br>
 
                 <input class="button" type="button" id="button" value="ยืนยันคำตอบ" onclick="check();">
             </form>
+            
             <div id="after_submit">
                 <h4 id="number_correct"></h4>
-                </div>
+            </div>
         </div>
         </div>       
            
