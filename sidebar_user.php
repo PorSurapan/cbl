@@ -32,7 +32,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuIntro">
                     <li>
-                        <a href="content.html">เนื้อหา</a>
+                        <a href="content.php">เนื้อหา</a>
                     </li>
                     <li>
                         <a href="tools.html">เตรียมเครื่องมือ</a>
