@@ -83,10 +83,10 @@
                         <a href="#">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">เพิ่มข้อมูลด้วย PHP</a>
+                        <a href="add_data_php.php">เพิ่มข้อมูลด้วย PHP</a>
                     </li>
                     <li>
-                        <a href="#">เพิ่มข้อมูลด้วย PHP & AJAX</a>
+                        <a href="add_data_ajax.php">เพิ่มข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
@@ -103,10 +103,10 @@
                         <a href="#">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แสดงข้อมูลด้วย PHP</a>
+                        <a href="show_data_php.php">แสดงข้อมูลด้วย PHP</a>
                     </li>
                     <li>
-                        <a href="#">แสดงข้อมูลด้วย PHP & AJAX</a>
+                        <a href="show_data_ajax.php">แสดงข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
@@ -123,10 +123,10 @@
                         <a href="#">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แก้ไขข้อมูลด้วย PHP</a>
+                        <a href="update_data_php.php">แก้ไขข้อมูลด้วย PHP</a>
                     </li>
                     <li>
-                        <a href="#">แก้ไขข้อมูลด้วย PHP & AJAX</a>
+                        <a href="update_data_ajax.php">แก้ไขข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
@@ -143,10 +143,10 @@
                         <a href="#">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">ลบข้อมูลด้วย PHP</a>
+                        <a href="del_data_php.php">ลบข้อมูลด้วย PHP</a>
                     </li>
                     <li>
-                        <a href="#">ลบข้อมูลด้วย PHP & AJAX</a>
+                        <a href="del_data_ajax.php">ลบข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
