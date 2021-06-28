@@ -2,8 +2,8 @@
 	session_start();
 
 	$sidebar = false;
-	if(isset($_SESSION['s_username']) && $_SESSION['logged'] == true) {
-		$sidebar = true;
+	if(isset($_SESSION['s_username']) && $_SESSION['s_username'] == 'Admin' && $_SESSION['logged'] == true) {
+		// include('');
     } else {
         echo '<script type="text/javascript">';
 		echo 'if(!alert("กรุณาเข้าสู่ระบบก่อน (หากพบปัญหา โปรดติดต่อผู้ดูแลระบบ)")) document.location = "/cbl/home/index.html";';

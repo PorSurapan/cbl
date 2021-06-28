@@ -11,7 +11,7 @@
 
     if(!$rs || mysqli_num_rows($rs) == 0) {
         echo '<script type="text/javascript">';
-        echo 'if(!alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!")) document.location = "index.php";';
+        echo 'if(!alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!")) document.location = "index.html";';
         echo '</script>';
     }
     else
