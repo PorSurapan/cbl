@@ -161,7 +161,7 @@
 
             <!-- About -->
             <li>
-                <a href="about.html">เกี่ยวกับ</a>
+                <a href="about.php">เกี่ยวกับ</a>
             </li>
         </ul>
 
