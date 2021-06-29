@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	if(isset($_SESSION['s_username']) && $_SESSION['logged'] == true) {
+	if(isset($_SESSION['s_id']) && $_SESSION['logged'] == true) {
 		//include('')
     } else {
         echo '<script type="text/javascript">';
@@ -58,7 +58,7 @@
                     $sort = "เรียงตามผู้ลงทะเบียนล่าสุด";
             ?>
 
-            <table width="80%">
+            <table width="100%">
                 <tr>
                     <form action="all_learner.php" method="get">
                         <td>
@@ -120,7 +120,6 @@
 							{
 								$sql = "SELECT * FROM profiles WHERE (id != 1) AND (username LIKE '%$search%' OR name LIKE '%$search%')";
 							}
-
 							
                             $rs = $con->query($sql);
 

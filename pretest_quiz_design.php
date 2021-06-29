@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	if(isset($_SESSION['s_username']) && $_SESSION['logged'] == true) {
+	if(isset($_SESSION['s_id']) && $_SESSION['logged'] == true) {
 		//include('')
     } else {
         echo '<script type="text/javascript">';
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/dashboard.css">
-	<script src=".js"></script>
+	<script src="searchUserDesign.js"></script>
 </head>
 
 <body>
@@ -54,19 +54,19 @@
                     $sort = "เรียงตามผู้ลงทะเบียนล่าสุด";
             ?>
 
-            <table width="80%">
+            <table width="100%">
                 <tr>
-                    <form action="all_learner.php" method="get">
+                    <form action="pretest_quiz_design.php" method="get">
                         <td>
                             <b>ค้นหาชื่อ </b>
-                            <input list="word" name="search" placeholder="กรอกคำค้น" onkeyup="searchUser(this.value)" />
+                            <input list="word" name="search" placeholder="กรอกคำค้น" onkeyup="searchUserDesign(this.value)" />
                             <datalist id="word">
 							</datalist>
                             <input class="button button1" type="submit" value="ค้นหา">
                         </td>
                     </form>
 
-                    <form name="form" action="all_learner.php" method="post">
+                    <form name="form" action="pretest_quiz_design.php" method="post">
                         <td>
                             <b>เรียงตาม </b>
                             <select name="sort" id="sort" onchange="this.form.submit()">
@@ -75,7 +75,9 @@
                                 <option value="เรียงตามผู้ลงทะเบียนเก่าสุด">เรียงตามผู้ลงทะเบียนเก่าสุด</option>
                                 <option value="เรียงตามตัวอักษร (ชื่อผู้ใช้)">เรียงตามตัวอักษร (ชื่อผู้ใช้)</option>
                                 <option value="เรียงตามตัวอักษร (ชื่อ - นามสกุล)">เรียงตามตัวอักษร (ชื่อ - นามสกุล)</option>
-                                <option value="เรียงตามความคืบหน้า">เรียงตามความคืบหน้า</option>
+                                <option value="เรียงตามคะแนน (มาก - น้อย)">เรียงตามคะแนน (มาก - น้อย)</option>
+                                <option value="เรียงตามเวลา (ล่าสุด - เก่าสุด)">เรียงตามเวลา (ล่าสุด - เก่าสุด)</option>
+                                <option value="เรียงตามสถานะ (ผ่าน - ไม่ผ่าน)">เรียงตามสถานะ (ผ่าน - ไม่ผ่าน)</option>
                             </select>
                         </td>
                     </form>
@@ -101,25 +103,28 @@
                             $con = mysqli_connect("localhost", "root", "", "studyphp");
                             $con->query("SET NAMES UTF8");
 
-							// if($search == "")
-							// {
-							// 	if($sort == "เรียงตามผู้ลงทะเบียนล่าสุด")
-							// 		$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY id DESC";
-							// 	else if($sort == "เรียงตามผู้ลงทะเบียนเก่าสุด")
-							// 		$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY id ASC";
-							// 	else if($sort == "เรียงตามตัวอักษร (ชื่อผู้ใช้)")
-							// 		$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY username";
-							// 	else if($sort == "เรียงตามตัวอักษร (ชื่อ - นามสกุล)")
-							// 		$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY name";
-							// 	else
-							// 		$sql = "SELECT * FROM profiles WHERE id != 1 ORDER BY process DESC";
-							// }
-							// else
-							// {
-							// 	$sql = "SELECT * FROM profiles WHERE (id != 1) AND (username LIKE '%$search%' OR name LIKE '%$search%')";
-							// }
+							if($search == "")
+							{
+								if($sort == "เรียงตามผู้ลงทะเบียนล่าสุด")
+									$sql = "SELECT * FROM design ORDER BY user_id DESC";
+								else if($sort == "เรียงตามผู้ลงทะเบียนเก่าสุด")
+									$sql = "SELECT * FROM design ORDER BY user_id ASC";
+								else if($sort == "เรียงตามตัวอักษร (ชื่อผู้ใช้)")
+									$sql = "SELECT * FROM design ORDER BY user_username";
+								else if($sort == "เรียงตามตัวอักษร (ชื่อ - นามสกุล)")
+									$sql = "SELECT * FROM design ORDER BY user_name";
+								else if($sort == "เรียงตามคะแนน (มาก - น้อย)")
+									$sql = "SELECT * FROM design ORDER BY pre_test DESC";
+                                else if($sort == "เรียงตามเวลา (ล่าสุด - เก่าสุด)")
+									$sql = "SELECT * FROM design ORDER BY date_time DESC";
+                                else
+                                    $sql = "SELECT * FROM design ORDER BY finished";
+							}
+							else
+							{
+								$sql = "SELECT * FROM design WHERE user_username LIKE '%$search%' OR user_name LIKE '%$search%'";
+							}
 
-							$sql = "SELECT * FROM quiz_design ORDER BY id DESC";
                             $rs = $con->query($sql);
 
                             while($row = $rs->fetch_assoc()) {
