@@ -7,9 +7,9 @@
     $con->query("SET NAMES UTF8");
 
     if ($word != null)
-        $sql = "SELECT user_username, user_name FROM design WHERE user_username LIKE '%$word%' OR user_name LIKE '%$word%'";
+        $sql = "SELECT user_username, user_name FROM designpre WHERE user_username LIKE '%$word%' OR user_name LIKE '%$word%'";
     else
-        $sql = "SELECT user_username, user_name FROM design WHERE user_id = 0";
+        $sql = "SELECT user_username, user_name FROM designpre WHERE user_id = 0";
 
     $rs = $con->query($sql);
 

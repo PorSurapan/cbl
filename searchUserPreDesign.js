@@ -24,11 +24,11 @@ function stateChange() {
     }
 }
 
-function searchUserDesign(str)
+function searchUserPreDesign(str)
 {
     createXMLHttpRequest();
     xmlHttp.onreadystatechange = stateChange;
-    var url = "userDesignSearch.php";
+    var url = "userPreDesignSearch.php";
     url = url + "?word=" + str;
     xmlHttp.open("GET", url, true);
     xmlHttp.send(null);

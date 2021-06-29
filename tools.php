@@ -1,9 +1,19 @@
-<!doctype html>
+<?php
+	session_start();
 
-<html lang="th">
+	if(isset($_SESSION['s_id']) && $_SESSION['logged'] == true) {
+		//include('')
+    } else {
+        echo '<script type="text/javascript">';
+		echo 'if(!alert("กรุณาเข้าสู่ระบบก่อน (หากพบปัญหา โปรดติดต่อผู้ดูแลระบบ)")) document.location = "/cbl/home/index.html";';
+		echo '</script>';
+    }
+?>
+
+<html>
 
 <head>
-	<title>Computer-Based Learning</title>
+	<title>Database Management with PHP - Tools</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,8 +29,6 @@
 	<div class="wrapper d-flex align-items-stretch">
 		<!-- include sidebar -->
         <?php include ('sidebar_user.php'); ?>
-
-
 
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
@@ -113,7 +121,6 @@
             <img src="/cbl/images/xampp11.jpg" width="600"><br><br><br>
         </div>
 	</div>
-
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>

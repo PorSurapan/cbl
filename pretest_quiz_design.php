@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/dashboard.css">
-	<script src="searchUserDesign.js"></script>
+	<script src="searchUserPreDesign.js"></script>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
                     <form action="pretest_quiz_design.php" method="get">
                         <td>
                             <b>ค้นหาชื่อ </b>
-                            <input list="word" name="search" placeholder="กรอกคำค้น" onkeyup="searchUserDesign(this.value)" />
+                            <input list="word" name="search" placeholder="กรอกคำค้น" onkeyup="searchUserPreDesign(this.value)" />
                             <datalist id="word">
 							</datalist>
                             <input class="button button1" type="submit" value="ค้นหา">
@@ -106,23 +106,23 @@
 							if($search == "")
 							{
 								if($sort == "เรียงตามผู้ลงทะเบียนล่าสุด")
-									$sql = "SELECT * FROM design ORDER BY user_id DESC";
+									$sql = "SELECT * FROM designpre ORDER BY user_id DESC";
 								else if($sort == "เรียงตามผู้ลงทะเบียนเก่าสุด")
-									$sql = "SELECT * FROM design ORDER BY user_id ASC";
+									$sql = "SELECT * FROM designpre ORDER BY user_id ASC";
 								else if($sort == "เรียงตามตัวอักษร (ชื่อผู้ใช้)")
-									$sql = "SELECT * FROM design ORDER BY user_username";
+									$sql = "SELECT * FROM designpre ORDER BY user_username";
 								else if($sort == "เรียงตามตัวอักษร (ชื่อ - นามสกุล)")
-									$sql = "SELECT * FROM design ORDER BY user_name";
+									$sql = "SELECT * FROM designpre ORDER BY user_name";
 								else if($sort == "เรียงตามคะแนน (มาก - น้อย)")
-									$sql = "SELECT * FROM design ORDER BY pre_test DESC";
+									$sql = "SELECT * FROM designpre ORDER BY pre_test DESC";
                                 else if($sort == "เรียงตามเวลา (ล่าสุด - เก่าสุด)")
-									$sql = "SELECT * FROM design ORDER BY date_time DESC";
+									$sql = "SELECT * FROM designpre ORDER BY date_time DESC";
                                 else
-                                    $sql = "SELECT * FROM design ORDER BY finished";
+                                    $sql = "SELECT * FROM designpre ORDER BY finished";
 							}
 							else
 							{
-								$sql = "SELECT * FROM design WHERE user_username LIKE '%$search%' OR user_name LIKE '%$search%'";
+								$sql = "SELECT * FROM designpre WHERE user_username LIKE '%$search%' OR user_name LIKE '%$search%'";
 							}
 
                             $rs = $con->query($sql);
