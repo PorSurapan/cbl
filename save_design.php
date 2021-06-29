@@ -1,6 +1,4 @@
 <?php
-    session_start();
-
     $id = $_GET["id"];
     $point = $_GET["point"];
 
@@ -8,7 +6,8 @@
     $con->query("SET NAMES UTF8");
 
     if ($id != null)
-        $sql = "SELECT username, name FROM profiles WHERE id != ".$id.";
+        $sql = "SELECT username, name FROM profiles WHERE id = $id";
+
 
     $rs = $con->query($sql);
 
@@ -16,14 +15,22 @@
     $name = "";
     while($row = $rs->fetch_assoc()) {
         $username = $row['username'];
-        $name =  $row['name'];
+        $name = $row['name'];
     }
 
-    $status = "ยังไม่ผ่าน"
+
+    $status = "ยังไม่ผ่าน";
     if($point >= 10)
-        $status = "ผ่านแล้ว"
-    $sql = "INSERT INTO design (user_id,user_username, user_name, pre_test,finished)
-				VALUES('" . $id . "', '" . $username . "', '" . $name . "','". $point"','".$status"');
+        $status = "ผ่านแล้ว";
+
+    $sql = "INSERT INTO design (user_id, user_username, user_name, pre_test, finished)
+			VALUES('" . $id . "', '" . $username . "', '" . $name . "', '" . $point . "', '" . $status . "')";
+
+    $rs = $con->query($sql);
+    if($rs)
+        echo '--- Saved!! ---' . ' id:' . $id . ' username: ' . $username . ' name: ' . $name . ' point: ' . $point . ' status: ' . $status;
+    else
+        echo '';
 
     $con->close();
 ?>

@@ -19,10 +19,12 @@
         while($row = $rs->fetch_assoc()) {
             $id = $row['id'];
             $username = $row['username'];
+            $name = $row['name'];
 
             $_SESSION['logged'] = true;
             $_SESSION["s_id"] = $id;
 			$_SESSION["s_username"] = $username;
+            $_SESSION["s_name"] = $name;
 
             $conn->close();
 

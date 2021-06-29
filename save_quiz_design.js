@@ -9,18 +9,22 @@ function createXMLHttpRequest() {
 
 function stateChange() {
     if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
-        var allText = xmlHttp.responseText;
-        
-        
+        var text = xmlHttp.responseText;
+        //alert(text);
+
+        if(text != '')
+            alert('บันทึกคะแนนเรียบร้อย');
+        else
+            alert('ระบบเกิดข้อผิดพลาด โปรดติดต่อผู้ดูแล');
     }
 }
 
-function savequiz(id,point)
+function savePoint(id, point)
 {
     createXMLHttpRequest();
     xmlHttp.onreadystatechange = stateChange;
     var url = "save_design.php";
-    url = url + "?id=" + id + "?point" + point;
+    url = url + "?id=" + id + "&point=" + point;
     xmlHttp.open("GET", url, true);
     xmlHttp.send(null);
 }

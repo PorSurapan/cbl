@@ -194,10 +194,33 @@ label {
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
+  width: 125px;
 	color: white;
 	font-size: 16px;
 	transition-duration: .5s;
 	margin-top: 15px; }
+
+.save {
+  background: rgb(30, 0, 165);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 125px;
+  color: white;
+  font-size: 16px;
+  transition-duration: .5s;
+  margin-top: 15px; }
+
+.reset {
+  background: rgb(197, 135, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 125px;
+  color: white;
+  font-size: 16px;
+  transition-duration: .5s;
+  margin-top: 15px; }
 
 button:focus {
   outline: 1px dotted;
@@ -8354,4 +8377,14 @@ a[data-toggle="collapse"] {
 
 #after_submit{
    visibility: hidden;
+}
+
+#save_quiz{
+  visibility: hidden;
+  display: inline;
+}
+
+#reset_quiz{
+  visibility: hidden;
+  display: inline;
 }
