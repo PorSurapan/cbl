@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/snackbar.css">
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -19,8 +20,10 @@
 			$("#submit").click(function () {
 				var password = $("#password").val();
 				var confirmPassword = $("#confirm_password").val();
+				var x = document.getElementById("snackbar");
 				if (password != confirmPassword) {
-					alert("รหัสผ่านไม่ตรงกัน!");
+					x.className = "show";
+					setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 					return false;
 				}
 				return true;
@@ -78,6 +81,7 @@
 							</form>
 
 							<p class="text-center">ลงทะเบียนแล้ว? <a href="index.html">เข้าสู่ระบบ</a></p>
+							<div id="snackbar">รหัสผ่านไม่ตรงกัน!</div>
 						</div>
 					</div>
 				</div>
