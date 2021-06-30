@@ -10,8 +10,8 @@ function createXMLHttpRequest() {
 function stateChange() {
     if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
         var allText = xmlHttp.responseText;
-        
         //alert(allText);
+        
         var temp = new Array();
         temp = allText.split("^");
 

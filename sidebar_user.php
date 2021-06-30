@@ -21,7 +21,7 @@
                         <a href="#">ข้อมูลส่วนตัว</a>
                     </li>
                     <li>
-                        <a href="/cbl/home/index.html">ออกจากระบบ</a>
+                        <a href="/cbl/home/logout.php">ออกจากระบบ</a>
                     </li>
                 </ul>
             </li>

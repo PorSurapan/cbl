@@ -1,41 +1,22 @@
 <?php
-    session_start();
+    $username = $_GET["username"];
+    $password = $_GET["password"];
     
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    
-    $conn = mysqli_connect("localhost", "root", "", "studyphp");
-    $conn->query("SET NAMES UTF8");
+    $con = mysqli_connect("localhost", "root", "", "studyphp");
+    $con->query("SET NAMES UTF8");
     $sql = "SELECT * FROM profiles WHERE username = '$username' AND password = '$password'";
-    $rs = $conn->query($sql);
+    $rs = $con->query($sql);
 
+    $user = "";
     if(!$rs || mysqli_num_rows($rs) == 0) {
-        echo '<script type="text/javascript">';
-        echo 'if(!alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!")) document.location = "index.html";';
-        echo '</script>';
-    }
-    else
-    {
+        echo "";
+    } else {
         while($row = $rs->fetch_assoc()) {
-            $id = $row['id'];
-            $username = $row['username'];
-            $name = $row['name'];
-
-            $_SESSION['logged'] = true;
-            $_SESSION["s_id"] = $id;
-			$_SESSION["s_username"] = $username;
-            $_SESSION["s_name"] = $name;
-
-            $conn->close();
-
-            if($username == "Admin")
-            {
-                header("Location: /cbl/dashboard_admin.php");
-            }
-            else
-            {
-                header("Location: /cbl/index.php");
-            }
+            $user = $row['id'] . "^" . $row['username'] . "^" . $row['name'];
         }
+
+        echo "$user";
     }
+
+    $con->close();
 ?>

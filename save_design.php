@@ -19,11 +19,11 @@
     }
 
 
-    $status = "ยังไม่ผ่าน";
+    $status = "ไม่ผ่าน";
     if($point >= 10)
-        $status = "ผ่านแล้ว";
+        $status = "ผ่าน";
 
-    $sql = "INSERT INTO design (user_id, user_username, user_name, pre_test, finished)
+    $sql = "INSERT INTO designpre (user_id, user_username, user_name, pre_test, finished)
 			VALUES('" . $id . "', '" . $username . "', '" . $name . "', '" . $point . "', '" . $status . "')";
 
     $rs = $con->query($sql);
