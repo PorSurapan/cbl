@@ -80,7 +80,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuAdd">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="quiz_insert.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
                         <a href="add_data_php.php">เพิ่มข้อมูลด้วย PHP</a>

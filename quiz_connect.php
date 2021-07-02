@@ -73,16 +73,16 @@
                 <h5><br>3) จงเขียนคำส้ั่ง SQL ที่ถูกต้องเพื่อเลือกชุดอักขระภาษาไทย เป็น UTF8<br></h5>
                 <h5><br>4) จงเขียนคำส้ั่ง SQL ที่ถูกต้องเพื่อปิดการเชื่อมต่อฐานข้อมูล<br><br></h5>
                 <h6>&#60;?php<br><br></h6>
-                <h6 style="text-indent: 2.5em;">&#36;con = mysqli_connect(" <input type="text" id="textBox1" name="question1" > ", "root", "");</h6>
+                <h6 style="text-indent: 2.5em;">&#36;con = mysqli_connect(" <input type="text" id="textBox1" name="question1" placeholder="ข้อที่ 1"> ", "root", "");</h6>
                 <p id="checkQ1"></p>
                 <h6 style="text-indent: 2.5em;">if(!$con){<br><br></h6>
                 <h6 style="text-indent: 5em;">die("Could not connect: " . mysqli_error());</h6>
                 <h6 style="text-indent: 2.5em;">{</h6>
-                <h6 style="text-indent: 2.5em;">mysqli_select_db($con," <input type="text" id="textBox2" name="question2" > ");<br><br></h6>
+                <h6 style="text-indent: 2.5em;">mysqli_select_db($con," <input type="text" id="textBox2" name="question2" placeholder="ข้อที่ 2"> ");<br><br></h6>
                 <p id="checkQ2"></p>
-                <h6 style="text-indent: 2.5em;">$con->query(" <input type="text" id="textBox3" name="question3" > ");<br><br></h6>
+                <h6 style="text-indent: 2.5em;">$con->query(" <input type="text" id="textBox3" name="question3" placeholder="ข้อที่ 3"> ");<br><br></h6>
                 <p id="checkQ3"></p>
-                <h6 style="text-indent: 2.5em;">mysqli_<input type="text" id="textBox4" name="question4" >($con);<br><br>?></h6>
+                <h6 style="text-indent: 2.5em;">mysqli_<input type="text" id="textBox4" name="question4" placeholder="ข้อที่ 4">($con);<br><br>?></h6>
                 <p id="checkQ4"></p>
                 <br><br>
                 
