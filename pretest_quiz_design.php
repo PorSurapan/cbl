@@ -118,7 +118,7 @@
                                 else if($sort == "เรียงตามเวลา (ล่าสุด - เก่าสุด)")
 									$sql = "SELECT * FROM designpre ORDER BY date_time DESC";
                                 else
-                                    $sql = "SELECT * FROM designpre ORDER BY finished";
+                                    $sql = "SELECT * FROM designpre ORDER BY pass";
 							}
 							else
 							{
@@ -133,7 +133,7 @@
                                 echo "<td>" . $row['user_name'] . "</td>";
                                 echo "<td>" . $row['pre_test'] . "</td>";
                                 echo "<td>" . $row['date_time'] . "</td>";
-                                echo "<td>" . $row['finished'] . "</td>";
+                                echo "<td>" . $row['pass'] . "</td>";
                                 echo "</tr>";
                             }
                             

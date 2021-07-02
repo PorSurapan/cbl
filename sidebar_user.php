@@ -52,7 +52,7 @@
                         <a href="intro_phpmyadmin.php">ความรู้เบื้องต้น phpMyAdmin</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="quiz_design_post.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
