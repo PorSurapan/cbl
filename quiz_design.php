@@ -94,7 +94,7 @@
                 <p id="checkQ4"></p>
                 <br>
 
-                <h5><br>5) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อเพิ่มคอลัมน์ประเภท DATE ที่ชื่อว่า Birthday<br><br></h5>
+                <h5><br>5) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อเพิ่มคอลัมน์ประเภท DATE ที่ชื่อว่า Birthday จากตาราง Persons<br><br></h5>
                 <input type = "radio" name = "question5" value = "ALTER TABLE ADD Birthday DATE;"> ALTER TABLE ADD Birthday DATE;<br><br>
                 <input type = "radio" name = "question5" value = "ALTER TABLE Persons ADD DATE Birthday;"> ALTER TABLE Persons ADD DATE Birthday;<br><br>
                 <input type = "radio" name = "question5" value = "ALTER Persons ADD Birthday DATE;"> ALTER Persons ADD Birthday DATE;<br><br>
