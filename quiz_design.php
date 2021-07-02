@@ -129,7 +129,6 @@
             <input type="hidden" id="user_id" name="user_id" value="<?php echo $_SESSION['s_id']; ?>">
         </div>
     </div>
-</body>
 
     <script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
