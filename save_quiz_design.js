@@ -12,10 +12,18 @@ function stateChange() {
         var text = xmlHttp.responseText;
         //alert(text);
 
-        if(text != '')
-            alert('บันทึกคะแนนเรียบร้อย');
-        else
-            alert('ระบบเกิดข้อผิดพลาด โปรดติดต่อผู้ดูแล');
+        if(text == 'success') {
+            var x = document.getElementById("snackbar_success");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        } else if(text == 'fails') {
+            alert("ไม่สามารถบันทึกคะแนนได้ โปรดติดต่อผู้ดูแลระบบ")
+        } else {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+            
     }
 }
 

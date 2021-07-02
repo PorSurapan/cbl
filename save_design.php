@@ -6,31 +6,40 @@
     $con->query("SET NAMES UTF8");
 
     if ($id != null)
+        $sql = "SELECT user_id FROM designpre WHERE user_id = $id";
+
+    $rs = $con->query($sql);
+    
+    if(!$rs || mysqli_num_rows($rs) == 0)
+    {
         $sql = "SELECT username, name FROM profiles WHERE id = $id";
+        $rs = $con->query($sql);
 
+        $username = "";
+        $name = "";
+        while($row = $rs->fetch_assoc()) {
+            $username = $row['username'];
+            $name = $row['name'];
+        }
 
-    $rs = $con->query($sql);
+        $finish = 1;
+        $status = "ไม่ผ่าน";
+        if($point >= 10)
+            $status = "ผ่าน";
 
-    $username = "";
-    $name = "";
-    while($row = $rs->fetch_assoc()) {
-        $username = $row['username'];
-        $name = $row['name'];
+        $sql = "INSERT INTO designpre (user_id, user_username, user_name, pre_test, pass, finished)
+                VALUES('" . $id . "', '" . $username . "', '" . $name . "', '" . $point . "', '" . $status . "', '" . $finish . "')";
+
+        $rs = $con->query($sql);
+        if($rs)
+            echo "success";
+        else
+            echo "fails";
     }
-
-
-    $status = "ไม่ผ่าน";
-    if($point >= 10)
-        $status = "ผ่าน";
-
-    $sql = "INSERT INTO designpre (user_id, user_username, user_name, pre_test, finished)
-			VALUES('" . $id . "', '" . $username . "', '" . $name . "', '" . $point . "', '" . $status . "')";
-
-    $rs = $con->query($sql);
-    if($rs)
-        echo '--- Saved!! ---' . ' id:' . $id . ' username: ' . $username . ' name: ' . $name . ' point: ' . $point . ' status: ' . $status;
     else
-        echo '';
+    {
+        echo "pass";
+    }
 
     $con->close();
 ?>
