@@ -13,7 +13,7 @@
 <html id="top">
 
 <head>
-    <title>Computer-Based Learning</title>
+    <title>Pre-Test การออกแบบฐานข้อมูล - Database Management with PHP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -43,7 +43,7 @@
             document.getElementById("checkQ4").innerHTML = str;
             document.getElementById("checkQ5").innerHTML = str;
             document.getElementById("checkQ6").innerHTML = str;
-            
+
             document.getElementById("resetQuiz").style.visibility = "hidden";
             document.getElementById("after_submit").style.visibility = "hidden";
         }
