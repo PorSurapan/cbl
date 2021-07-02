@@ -13,7 +13,7 @@
 <html id="top">
 
 <head>
-    <title>Pre-Test การออกแบบฐานข้อมูล - Database Management with PHP</title>
+    <title>Post-Test การออกแบบฐานข้อมูล - Database Management with PHP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/snackbar.css">
 
     <script src="design_quiz.js"></script>
-    <script src="save_quiz_design.js"></script>
+    <script src="save_quiz_design_post.js"></script>
 
     <script type="text/javascript">
         function showBT() {
@@ -57,7 +57,7 @@
 
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5 pt-5">
-            <h2 class="mb-4" id="top">แบบทดสอบก่อนเรียน</h2>
+            <h2 class="mb-4" id="top">แบบทดสอบหลังเรียน</h2>
             <p>ในการทำแบบทดสอบครั้งแรก ระบบจะบันทึกคะแนนอัตโนมัติ</p>
         
             <form id="quiz" name="quiz">
@@ -129,6 +129,7 @@
             <input type="hidden" id="user_id" name="user_id" value="<?php echo $_SESSION['s_id']; ?>">
         </div>
     </div>
+</body>
 
     <script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>

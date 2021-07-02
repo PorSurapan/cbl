@@ -13,7 +13,7 @@
 <html id="top">
 
 <head>
-    <title>Pre-Test การเชื่อมต่อฐานข้อมูล - Database Management with PHP</title>
+    <title>Post-Test การเชื่อมต่อฐานข้อมูล - Database Management with PHP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/snackbar.css">
 
     <script src="connect_quiz.js"></script>
-    <script src="save_quiz_connect.js"></script>
+    <script src="save_quiz_connect_post.js"></script>
 
     <script type="text/javascript">
         function showBT() {
@@ -62,15 +62,15 @@
 
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5 pt-5">
-            <h2 class="mb-4" id="top">แบบทดสอบก่อนเรียน</h2>
+            <h2 class="mb-4" id="top">แบบทดสอบหลังเรียน</h2>
             <p>ในการทำแบบทดสอบครั้งแรก ระบบจะบันทึกคะแนนอัตโนมัติ</p>
 
             <form id="quiz" name="quiz">
                
-                <h5><br>1) จงเขียนคำส้ั่งที่ถูกต้องเพื่อเชื่อมต่อไปยัง Host "localhost"<br></h5>
-                <h5><br>2) จงเขียนคำส้ั่งที่ถูกต้องเพื่อทำการเชื่อมต่อฐานข้อมูลที่ชื่อว่า studyphp<br></h5>
-                <h5><br>3) จงเขียนคำส้ั่งที่ถูกต้องเพื่อเลือกชุดอักขระภาษาไทย เป็น UTF8<br></h5>
-                <h5><br>4) จงเขียนคำส้ั่งที่ถูกต้องเพื่อปิดการเชื่อมต่อฐานข้อมูล<br><br></h5>
+                <h5><br>1) จงเขียนคำส้ั่ง SQL ที่ถูกต้องเพื่อเชื่อมต่อไปยัง Host "localhost"<br></h5>
+                <h5><br>2) จงเขียนคำส้ั่ง SQL ที่ถูกต้องเพื่อทำการเชื่อมต่อฐานข้อมูลที่ชื่อว่า studyphp<br></h5>
+                <h5><br>3) จงเขียนคำส้ั่ง SQL ที่ถูกต้องเพื่อเลือกชุดอักขระภาษาไทย เป็น UTF8<br></h5>
+                <h5><br>4) จงเขียนคำส้ั่ง SQL ที่ถูกต้องเพื่อปิดการเชื่อมต่อฐานข้อมูล<br><br></h5>
                 <h6>&#60;?php<br><br></h6>
                 <h6 style="text-indent: 2.5em;">&#36;con = mysqli_connect(" <input type="text" id="textBox1" name="question1" placeholder="ข้อที่ 1"> ", "root", "");</h6>
                 <p id="checkQ1"></p>
@@ -85,7 +85,7 @@
                 <p id="checkQ4"></p>
                 <br><br>
                 
-                <h5><br>5) ข้อใดเป็นการเลือกชุดอักขระภาษาไทยสำหรับการใช้ฐานข้อมูล MySQL<br><br></h5>
+                <h5><br>5) ข้อใดเป็นการเลือกชุดอักขระภาษาไทยสำหรับการใช้ฐานข้อมูล MySQL ?<br><br></h5>
                 <input type = "radio" name = "question5" value = "latin1"> latin1<br><br>
                 <input type = "radio" name = "question5" value = "utf8"> utf8<br><br>
                 <input type = "radio" name = "question5" value = "tis620"> tis620<br><br>
@@ -93,7 +93,7 @@
                 <p id="checkQ5"></p>
                 <br>
 
-                <h5><br>6) ข้อใดเป็น username ในฐานข้อมูล MySQL<br><br></h5>
+                <h5><br>6) ข้อใดเป็น username ในฐานข้อมูล MySQL ?<br><br></h5>
                 <input type = "radio" name = "question6" value = "sa"> sa<br><br>
                 <input type = "radio" name = "question6" value = "sys"> sys<br><br>
                 <input type = "radio" name = "question6" value = "root"> root<br><br>
@@ -145,6 +145,7 @@
             <input type="hidden" id="user_id" name="user_id" value="<?php echo $_SESSION['s_id']; ?>">
         </div>
     </div>
+</body>
 
     <script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
