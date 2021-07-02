@@ -21,13 +21,13 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/snackbar.css">
 
     <script src="quiz.js"></script>
     <script src="save_quiz_design.js"></script>
 
     <script type="text/javascript">
         function showBT() {
-            document.getElementById("saveQuiz").style.visibility = "visible";
             document.getElementById("resetQuiz").style.visibility = "visible";
         }
 
@@ -43,8 +43,7 @@
             document.getElementById("checkQ4").innerHTML = str;
             document.getElementById("checkQ5").innerHTML = str;
             document.getElementById("checkQ6").innerHTML = str;
-
-            document.getElementById("saveQuiz").style.visibility = "hidden";
+            
             document.getElementById("resetQuiz").style.visibility = "hidden";
             document.getElementById("after_submit").style.visibility = "hidden";
         }
@@ -59,6 +58,7 @@
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5 pt-5">
             <h2 class="mb-4" id="top">แบบทดสอบก่อนเรียน</h2>
+            <p>ในการทำแบบทดสอบครั้งแรก ระบบจะบันทึกคะแนนอัตโนมัติ</p>
         
 
             <form id="quiz" name="quiz">
@@ -111,19 +111,18 @@
                 <br>
                 
                 <a href="#after_submit">
-                    <input class="button" type="button" id="button" value="ยืนยันคำตอบ" onclick="check();showBT();">
+                    <input class="button" type="button" id="button" value="ยืนยันคำตอบ" onclick="check();showBT();savePoint(user_id.value, point.value);">
                 </a>
                 <div id="reset_quiz">
                     <a href="#top">
                         <input class="reset" type="button" id="resetQuiz" value="เริ่มทำใหม่" onclick="formReset();">
                     </a>
                 </div>
-                <div id="save_quiz">
-                    <input class="save" type="button" id="saveQuiz" value="บันทึกคะแนน" onclick="savePoint(user_id.value, point.value);">
-                </div>
             </form>
-            
-            
+
+            <div id="snackbar_success">บันทึกคะแนนแล้ว</div>
+            <div id="snackbar">ทำแบบทดสอบนี้ไปแล้ว ระบบไม่บันทึกคะแนน</div>
+
             <div id="after_submit">
                 <h4 id="number_correct"></h4>
             </div>
