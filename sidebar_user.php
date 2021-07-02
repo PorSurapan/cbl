@@ -18,7 +18,7 @@
                 
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
-                        <a href="#">ข้อมูลส่วนตัว</a>
+                        <a href="me.php">ข้อมูลส่วนตัว</a>
                     </li>
                     <li>
                         <a href="/cbl/home/logout.php">ออกจากระบบ</a>

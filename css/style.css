@@ -8379,11 +8379,6 @@ a[data-toggle="collapse"] {
    visibility: hidden;
 }
 
-#save_quiz{
-  visibility: hidden;
-  display: inline;
-}
-
 #reset_quiz{
   visibility: hidden;
   display: inline;
