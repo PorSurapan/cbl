@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/snackbar.css">
 
-    <script src="quiz.js"></script>
+    <script src="design_quiz.js"></script>
     <script src="save_quiz_design.js"></script>
 
     <script type="text/javascript">
@@ -60,7 +60,6 @@
             <h2 class="mb-4" id="top">แบบทดสอบก่อนเรียน</h2>
             <p>ในการทำแบบทดสอบครั้งแรก ระบบจะบันทึกคะแนนอัตโนมัติ</p>
         
-
             <form id="quiz" name="quiz">
                
                 <h5><br>1) เขียนคำสั่ง SQL ที่ถูกต้องเพื่อสร้างฐานข้อมูลใหม่ที่ชื่อว่า testDB<br><br></h5>
