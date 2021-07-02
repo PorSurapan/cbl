@@ -69,7 +69,7 @@
                         <a href="connect_db.php">การเชื่อมต่อฐานข้อมูล</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="quiz_connect_post.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
