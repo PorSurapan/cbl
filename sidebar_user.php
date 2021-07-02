@@ -63,7 +63,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuConn">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="quiz_connect.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
                         <a href="connect_db.php">การเชื่อมต่อฐานข้อมูล</a>
