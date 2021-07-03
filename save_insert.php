@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $id = $_GET["id"];
     $point = $_GET["point"];
 

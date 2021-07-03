@@ -21,11 +21,26 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+        });
+
+        btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+        });
+    </script>
 </head>
 
 <body>
-	
-    
 	<div class="wrapper d-flex align-items-stretch">
 		<!-- include sidebar -->
         <?php include ('sidebar_user.php'); ?>
@@ -116,7 +131,6 @@
             
             <p>สำหรับ Source Code ต่าง ๆ ในการทำเว็บไซต์ ให้สร้างไว้ที่ C:\xampp\htdocs\</p>
             <img src="/cbl/images/xampp15.png" width="800">
-
         </div>
 	</div>
 

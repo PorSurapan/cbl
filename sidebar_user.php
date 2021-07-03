@@ -18,7 +18,7 @@
                 
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
-                        <a href="#">ข้อมูลส่วนตัว</a>
+                        <a href="me.php">ข้อมูลส่วนตัว</a>
                     </li>
                     <li>
                         <a href="/cbl/home/logout.php">ออกจากระบบ</a>
@@ -89,7 +89,7 @@
                         <a href="add_data_ajax.php">เพิ่มข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="quiz_insert_post.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>

@@ -13,7 +13,7 @@
 <html id="top">
 
 <head>
-    <title>Pre-Test การเพิ่มข้อมูล - Database Management with PHP</title>
+    <title>Post-Test การเพิ่มข้อมูล - Database Management with PHP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -70,7 +70,7 @@
 
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5 pt-5">
-            <h2 class="mb-4" id="top">แบบทดสอบก่อนเรียน</h2>
+            <h2 class="mb-4" id="top">แบบทดสอบหลังเรียน</h2>
             <p>ในการทำแบบทดสอบครั้งแรก ระบบจะบันทึกคะแนนอัตโนมัติ</p>
         
 

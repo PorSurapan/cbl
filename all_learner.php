@@ -127,7 +127,7 @@
                                 echo "<tr>";
                                 echo "<td>" . $row['username'] . "</td>";
                                 echo "<td>" . $row['name'] . "</td>";
-                                echo "<td>" . $row['process'] . "</td>";
+                                echo "<td>" . $row['progress'] . "</td>";
                                 echo "</tr>";
                             }
                             
