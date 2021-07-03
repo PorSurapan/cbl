@@ -1,6 +1,16 @@
-<!doctype html>
+<?php
+	session_start();
 
-<html lang="th">
+	if(isset($_SESSION['s_id']) && $_SESSION['logged'] == true) {
+		// include('')
+    } else {
+        echo '<script type="text/javascript">';
+		echo 'if(!alert("กรุณาเข้าสู่ระบบก่อน (หากพบปัญหา โปรดติดต่อผู้ดูแลระบบ)")) document.location = "/cbl/home/index.html";';
+		echo '</script>';
+    }
+?>
+
+<html>
 
 <head>
 	<title>Computer-Based Learning</title>

@@ -30,7 +30,7 @@ function stateChange() {
 
             //alert(id + username + name);
 
-            document.location = "createSession.php/?id=" + id + "&username=" + username + "&name=" + name;
+            document.location = "createSession.php/?id=" + id + "&username=" + username + "&name=" + name + "&edit=null";
         }
     }
 }

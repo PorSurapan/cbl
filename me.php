@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/snackbar.css">
+
+    <script src="saveEdit.js"></script>
 
     <script type="text/javascript">
         function showForm() {
@@ -29,12 +32,15 @@
             document.getElementById("form").style.display = "block";
             document.getElementById("btnSave").style.display = "block";
             document.getElementById("btnCancel").style.display = "block";
-
+            document.getElementById("pw").style.display = "none";
+            document.getElementById("pwd").style.display = "block";
         }
 
         function hideForm() {
             document.getElementById("form").style.display = "none";
             document.getElementById("btnEdit").style.display = "block";
+            document.getElementById("pw").style.display = "block";
+            document.getElementById("pwd").style.display = "none";
         }
     </script>
 </head>
@@ -129,7 +135,8 @@
                 </tr>
                 <tr>
                     <td><h4>Password: </h4></td>
-                    <td><h4>******</h4></td>
+                    <td id="pw"><h4>**********</h4></td>
+                    <td id="pwd" style="display: none"><h4><?php echo $password ?></h4></td>
                 </tr>
                 <tr>
                     <td><h4>Progress: </h4></td>
@@ -144,18 +151,19 @@
                 <table width="100%">
                     <tr>
                         <td><h5>Username: </h5></td>
-                        <td><input id="username" name="username" type="text" placeholder="Username" required></td>
+                        <td><input id="username" name="username" type="text" value="<?php echo $username ?>" placeholder="Username" required></td>
                     </tr>
                     <tr>
                         <td><h5>Name: </h5></td>
-                        <td><input id="name" name="name" type="text" placeholder="Full Name" required></td>
+                        <td><input id="fname" name="fname" type="text" value="<?php echo $name ?>" placeholder="Full Name" required></td>
                     </tr>
                     <tr>
                         <td><h5>Password: </h5></td>
                         <td><input id="password" name="password" type="password" placeholder="Password" required></td>
                     </tr>
                     <tr>
-                        <td><button class="button3" id="btnSave" type="button" onclick="saveEdit(username.value, name.value, password.value); hidden">บันทึก</button></td>
+                        <input id="uid" name="uid" type="hidden" value="<?php echo $_SESSION['s_id'] ?>">
+                        <td><button class="button3" id="btnSave" type="button" onclick="saveEdit(uid.value, username.value, fname.value, password.value);" style="display: none">บันทึก</button></td>
                         <td><button class="button4" id="btnCancel" type="button" onclick="hideForm(); hidden">ยกเลิก</button></td>
                     </tr>
                 </table>
@@ -203,6 +211,9 @@
                     </tbody>
                 </table>
             </div>
+
+            <div id="snackbar">ยังกรอกข้อมูลไม่ครบ</div>
+            <div id="snackbar_fails">ระบบเกิดข้อผิดพลาด</div>
 
 		</div>
 	</div>
