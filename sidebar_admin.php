@@ -35,7 +35,7 @@
                         <a href="pretest_quiz_design.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="posttest_quiz_design.php">แบบทดสอบหลังเรียน</a>
                     </li>
                     <li>
                         <a href="#">ภาพรวม</a>
@@ -49,10 +49,10 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuConn">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="pretest_quiz_connect.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="posttest_quiz_connect.php">แบบทดสอบหลังเรียน</a>
                     </li>
                     <li>
                         <a href="#">ภาพรวม</a>

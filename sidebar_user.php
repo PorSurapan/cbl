@@ -109,7 +109,7 @@
                         <a href="show_data_ajax.php">แสดงข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="quiz_display_post.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
