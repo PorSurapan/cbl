@@ -45,6 +45,53 @@
 			<p>หน่วยที่ 4 การแสดงข้อมูล&nbsp;&nbsp;</p>
 			<p>หน่วยที่ 5 การแก้ไขข้อมูล&nbsp;&nbsp;</p>
 			<p>หน่วยที่ 6 การลบข้อมูล&nbsp;&nbsp;</p>
+
+			<?php
+                $con = mysqli_connect("localhost", "root", "", "studyphp");
+                $con->query("SET NAMES UTF8");
+
+                $id = $_SESSION['s_id'];
+
+                // Design
+                $sql = "SELECT user_id FROM designpre WHERE id = " . $id;
+                $rs = $con->query($sql);
+                if(!$rs || mysqli_num_rows($rs) == 0) $d1 = 0;
+                else $d1 = 13;
+                
+                $sql = "SELECT user_id FROM designpost WHERE id = " . $id;
+                $rs = $con->query($sql);
+                if(!$rs || mysqli_num_rows($rs) == 0) $d2 = 0;
+                else $d2 = 13;
+                
+                // Connect
+                $sql = "SELECT user_id FROM connectpre WHERE id = " . $id;
+                $rs = $con->query($sql);
+                if(!$rs || mysqli_num_rows($rs) == 0) $c1 = 0;
+                else $c1 = 13;
+                
+                $sql = "SELECT user_id FROM connectpost WHERE id = " . $id;
+                $rs = $con->query($sql);
+                if(!$rs || mysqli_num_rows($rs) == 0) $c2 = 0;
+                else $c2 = 13;
+                
+
+                // Profile
+                $sql = "SELECT * FROM profiles WHERE id = " . $id;
+                $rs = $con->query($sql);
+
+                while($row = $rs->fetch_assoc()) {
+                    $username = $row['username'];
+                    $name = $row['name'];
+                    $password = $row['password'];
+                }
+
+
+                $sum = $d1 + $d2 + $c1 + $c2;
+                $sql = "UPDATE profiles SET progress = '" . $sum . "%' WHERE id = " . $id;
+                mysqli_query($con, $sql);
+
+                $con->close();
+            ?>
 		</div>
 	</div>
 
