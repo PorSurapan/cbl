@@ -89,7 +89,7 @@
                         <a href="add_data_ajax.php">เพิ่มข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="quiz_insert_post.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>

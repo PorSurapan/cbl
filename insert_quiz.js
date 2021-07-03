@@ -85,7 +85,7 @@ function check()
     }
 
     // Question 2.1
-    if(question21 == "getElementById") {
+    if(question21 == "url") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ21").innerHTML = str;
 
@@ -99,7 +99,7 @@ function check()
     }
 
     // Question 2.2
-    if(question22 == "createXMLHttpRequest") {
+    if(question22 == "str") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ22").innerHTML = str;
 
@@ -114,7 +114,7 @@ function check()
 
 
     // Question 2.3
-    if(question23 == "onreadystatechange") {
+    if(question23 == "open") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ23").innerHTML = str;
 
@@ -128,7 +128,7 @@ function check()
     }
 
     // Question 2.4
-    if(question24 == "open") {
+    if(question24 == "send") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ24").innerHTML = str;
 
