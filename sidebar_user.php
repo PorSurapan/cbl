@@ -1,3 +1,159 @@
+<?php
+    $con = mysqli_connect("localhost", "root", "", "studyphp");
+    $con->query("SET NAMES UTF8");
+
+    $id = $_SESSION['s_id'];
+    
+    // Design
+    $sql = "SELECT user_id FROM designpre WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $design1 = "ยังไม่ทำ";
+        $d1 = 0;
+    } else {
+        $design1 = "ทำแล้ว";
+        $d1 = 13;
+    }
+    
+    $sql = "SELECT user_id FROM designpost WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $design2 = "ยังไม่ทำ";
+        $d2 = 0;
+    } else {
+        $design2 = "ทำแล้ว";
+        $d2 = 13;
+    }
+
+
+    // Connect
+    $sql = "SELECT user_id FROM connectpre WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $connect1 = "ยังไม่ทำ";
+        $c1 = 0;
+    } else {
+        $connect1 = "ทำแล้ว";
+        $c1 = 13;
+    }
+    
+    $sql = "SELECT user_id FROM connectpost WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $connect2 = "ยังไม่ทำ";
+        $c2 = 0;
+    } else {
+        $connect2 = "ทำแล้ว";
+        $c2 = 13;
+    }
+
+    // Insert
+    $sql = "SELECT user_id FROM insertpre WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $insert1 = "ยังไม่ทำ";
+        $i1 = 0;
+    } else {
+        $insert1 = "ทำแล้ว";
+        $i1 = 13;
+    }
+
+    $sql = "SELECT user_id FROM insertppost WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $insert2 = "ยังไม่ทำ";
+        $i2 = 0;
+    } else {
+        $insert2 = "ทำแล้ว";
+        $i2 = 13;
+    }
+
+    // Display
+    $sql = "SELECT user_id FROM displaypre WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $display1 = "ยังไม่ทำ";
+        $p1 = 0;
+    } else {
+        $display1 = "ทำแล้ว";
+        $p1 = 13;
+    }
+
+    $sql = "SELECT user_id FROM displaypost WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $display2 = "ยังไม่ทำ";
+        $p2 = 0;
+    } else {
+        $display2 = "ทำแล้ว";
+        $p2 = 13;
+    }
+
+    // Edit
+    $sql = "SELECT user_id FROM editpre WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $edit1 = "ยังไม่ทำ";
+        $e1 = 0;
+    } else {
+        $edit1 = "ทำแล้ว";
+        $e1 = 13;
+    }
+
+    $sql = "SELECT user_id FROM editpost WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $edit2 = "ยังไม่ทำ";
+        $e2 = 0;
+    } else {
+        $edit2 = "ทำแล้ว";
+        $e2 = 13;
+    }
+
+    // Delete
+    $sql = "SELECT user_id FROM deletepre WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $delete1 = "ยังไม่ทำ";
+        $t1 = 0;
+    } else {
+        $delete1 = "ทำแล้ว";
+        $t1 = 13;
+    }
+
+    $sql = "SELECT user_id FROM deletepost WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $delete2 = "ยังไม่ทำ";
+        $t2 = 0;
+    } else {
+        $delete2 = "ทำแล้ว";
+        $t2 = 13;
+    }
+
+    // Final Exam
+    $sql = "SELECT * FROM final WHERE user_id = " . $id;
+    $rs = $con->query($sql);
+    if(!$rs || mysqli_num_rows($rs) == 0) {
+        $final = "ยังไม่ทำ";
+        $point = "-";
+        $f = 0;
+    } else {
+        while($row = $rs->fetch_assoc()) {
+            $point = $row['point'];
+        }
+        $final = "ทำแล้ว";
+        $f = 22;
+    }
+
+    // Progress
+    $sum = $d1 + $d2 + $c1 + $c2 + $i1 + $i2 + $p1 + $p2 + $e1 + $e2 + $t1 + $t2 + $f;
+    $sql = "UPDATE profiles SET progress = '" . $sum . "%' WHERE id = " . $id;
+    mysqli_query($con, $sql);
+
+    $con->close();
+?>
+
 <nav id="sidebar">
 
     <div class="custom-menu">
