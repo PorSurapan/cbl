@@ -120,6 +120,8 @@
                 
 
                 $sum = $d1 + $d2 + $c1 + $c2;
+                $sql = "UPDATE profiles SET progress = '" . $sum . "%' WHERE id = " . $id;
+                mysqli_query($con, $sql);
 
                 $con->close();
             ?>

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/snackbar.css">
 
     <script src="insert_quiz.js"></script>
-    <script src="save_quiz_insert.js"></script>
+    <script src="save_quiz_insert_post.js"></script>
 
     <script type="text/javascript">
         function showBT() {

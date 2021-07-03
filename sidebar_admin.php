@@ -21,7 +21,7 @@
                         <a href="all_learner.php">ผู้เรียนทั้งหมด</a>
                     </li>
                     <li>
-                        <a href="#">สถิติ</a>
+                        <a href="static.php">สถิติ</a>
                     </li>
                 </ul>
             </li>
@@ -35,10 +35,7 @@
                         <a href="pretest_quiz_design.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
-                    </li>
-                    <li>
-                        <a href="#">ภาพรวม</a>
+                        <a href="posttest_quiz_design.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
@@ -49,13 +46,10 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuConn">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="pretest_quiz_connect.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
-                    </li>
-                    <li>
-                        <a href="#">ภาพรวม</a>
+                        <a href="posttest_quiz_connect.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
@@ -66,13 +60,10 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuAdd">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="pretest_quiz_insert.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
-                    </li>
-                    <li>
-                        <a href="#">ภาพรวม</a>
+                        <a href="posttest_quiz_insert.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
@@ -88,9 +79,6 @@
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
                     </li>
-                    <li>
-                        <a href="#">ภาพรวม</a>
-                    </li>
                 </ul>
             </li>
 
@@ -105,9 +93,6 @@
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
                     </li>
-                    <li>
-                        <a href="#">ภาพรวม</a>
-                    </li>
                 </ul>
             </li>
 
@@ -121,9 +106,6 @@
                     </li>
                     <li>
                         <a href="#">แบบทดสอบหลังเรียน</a>
-                    </li>
-                    <li>
-                        <a href="#">ภาพรวม</a>
                     </li>
                 </ul>
             </li>
