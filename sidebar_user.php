@@ -276,7 +276,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuEdit">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="quiz_edit.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
                         <a href="update_data_php.php">แก้ไขข้อมูลด้วย PHP</a>
