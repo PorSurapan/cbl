@@ -13,7 +13,7 @@
 <html id="top">
 
 <head>
-    <title>Pre-Test การแก้ไขข้อมูล - Database Management with PHP</title>
+    <title>Pre-Test การลบข้อมูล - Database Management with PHP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/snackbar.css">
 
-    <script src="edit_quiz.js"></script>
-    <script src="save_quiz_edit.js"></script>
+    <script src="delete_quiz.js"></script>
+    <script src="save_quiz_delete.js"></script>
 
     <script type="text/javascript">
         function showBT() {
@@ -77,69 +77,65 @@
                 <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูลใหม่ที่ชื่อว่า studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
                 <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , 'studyphp');</p> 
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"> profiles <input type="text" id="textBox12" name="question12"   > username = 'George' WHERE id = '  1 ';</h6>
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"> <input type="text" id="textBox12" name="question12"> profiles WHERE id = '  1 ';</h6>
                 <p id="checkQ11"></p><p id="checkQ12"></p>
-                <h6>if ($conn->query( <input type="text" id="textBox13" name="question13"   > ) == TRUE) {</h6>
+                <h6>if ($conn-> <input type="text" id="textBox13" name="question13"> ($sql) == TRUE) {</h6>
                 <p id="checkQ13">
                 <h6 style="text-indent: 2.5em;">echo "Record updated successfully";</h6>
                 <h6>{ else {</h6> 
-                <h6 style="text-indent: 2.5em;">echo "Error updating record: " . $ <input type="text" id="textBox14" name="question14"   > ->error;<br>}<br>$conn->close();<br>?></h6>
+                <h6 style="text-indent: 2.5em;">echo "Error updating record: " . $conn ->error;<br>}<br>$<input type="text" id="textBox14" name="question14"> ->close();<br>?></h6>
                 <p id="checkQ14">
                 <br>
 
-                <h5><br>2) เขียนคำสั่งที่ถูกต้องเพื่อใช้ ajax แก้ไขข้อมูลจากไฟล์ update_ajax.php<br><br></h5>
+                <h5><br>2) เขียนคำสั่งที่ถูกต้องเพื่อใช้ ajax แก้ไขข้อมูลจากไฟล์ delete_ajax.php<br><br></h5>
                 <h6>$.ajax({<br></h6>
-                <h6 style="text-indent: 2.5em;">url: "update_ajax.php",</h6>  
+                <h6 style="text-indent: 2.5em;">url: "delete_ajax.php",</h6>  
                 <h6 style="text-indent: 2.5em;">type: "POST",</h6>
-                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox21" name="question21"> : false,</h6>
-                <p id="checkQ21"></p> 
+                <h6 style="text-indent: 2.5em;">cache: false,</h6>
                 <h6 style="text-indent: 2.5em;">data:{</h6>
-                <h6 style="text-indent: 3em;">username: $('#username_modal').val(),</h6>
-                <h6 style="text-indent: 3em;">name: $('#name_modal').val(),</h6>
+                <h6 style="text-indent: 3em;">username: $(this).attr("data-username")</h6>
                 <h6 style="text-indent: 2.5em;">},</h6>
-                <h6 style="text-indent: 2.5em;">success: function(dataResult){</h6>
-                <h6 style="text-indent: 3em;">var dataResult = JSON.parse( <input type="text" id="textBox22" name="question22"> );</h6>
+                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox21" name="question21"> : function(dataResult){</h6>
+                <p id="checkQ21"></p>
+                <h6 style="text-indent: 3em;">var dataResult = <input type="text" id="textBox22" name="question22"> .parse(dataResult);</h6>
                 <p id="checkQ22"></p>
                 <h6 style="text-indent: 3em;">if(dataResult. <input type="text" id="textBox23" name="question23"> ==200){</h6>
                 <p id="checkQ23"></p>
-                <h6 style="text-indent: 3.5em;">$('#update_country').modal().hide();</h6>
-                <h6 style="text-indent: 3.5em;">alert('Data updated successfully !');</h6>
-                <h6 style="text-indent: 3.5em;">location. <input type="text" id="textBox24" name="question24"> ();</h6> 
+                <h6 style="text-indent: 3.5em;">$ele.fadeOut(). <input type="text" id="textBox24" name="question24"> ()</h6>
                 <p id="checkQ24"></p>
                 <h6 style="text-indent: 3em;">}</h6>
                 <h6 style="text-indent: 2.5em;">}<br>});</h6>
                 <br>
                 
-
-                <h5><br>3) ถ้าต้องการแก้ไขข้อมูลทั้งหมดในตารางควรใช้คำสั่ง SQL ใด<br><br></h5>
-                <input type = "radio" name = "question3" value = "UPDATE table_name SET column1 = value1, WHERE condition;"> UPDATE table_name SET column1 = value1 WHERE condition;<br><br>
-                <input type = "radio" name = "question3" value = "UPDATE table_name PUT column1 = value1, WHERE condition;"> UPDATE table_name PUT column1 = value1, WHERE condition;<br><br>
-                <input type = "radio" name = "question3" value = "EDIT table_name SET column1 = value1, WHERE condition;"> EDIT table_name SET column1 = value1, WHERE condition;<br><br>
-                <input type = "radio" name = "question3" value = "EDIT table_name PUT column1 = value1, WHERE condition;"> EDIT table_name PUT column1 = value1, WHERE condition;<br><br>
-                <p id="checkQ3"></p>
-                <br>
-
-                <h5><br>4) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการอัปเดตคอลัมน์ city ทั้งหมดในตาราง customers<br><br></h5>
-                <input type = "radio" name = "question4" value = "UPDATE customers SET city = 'Bangkok';"> UPDATE customers SET city = 'Bangkok';<br><br>
-                <input type = "radio" name = "question4" value = "UPDATE city = 'Bangkok' SET customers;"> UPDATE city = 'Bangkok' SET customers;<br><br>
-                <input type = "radio" name = "question4" value = "UPDATE customers PUT city = 'Bangkok';"> UPDATE customers PUT city = 'Bangkok';<br><br>
-                <input type = "radio" name = "question4" value = "UPDATE city = 'Bangkok' PUT customers;"> UPDATE UPDATE city = 'Bangkok' PUT customers;<br><br>
-                <p id="checkQ4"></p>
-                <br>
-
-                <h5><br>5) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการอัปเดตคอลัมน์ city เป็น Bangkok เมื่อ country เท่ากับ Thailand ในตาราง customers<br><br></h5>
-                <input type = "radio" name = "question5" value = "UPDATE customers SET country = 'Thailand' WHERE city = 'Bangkok';"> UPDATE customers SET country = 'Thailand' WHERE city = 'Bangkok';<br><br>
-                <input type = "radio" name = "question5" value = "UPDATE customers WHERE country = 'Thailand' SET city = 'Bangkok'; "> UPDATE customers WHERE country = 'Thailand' SET city = 'Bangkok';<br><br>
-                <input type = "radio" name = "question5" value = "UPDATE customers SET city = 'Bangkok' WHERE country = 'Thailand';"> UPDATE customers SET city = 'Bangkok' WHERE country = 'Thailand';<br><br>
-                <input type = "radio" name = "question5" value = "UPDATE customers WHERE city = 'Bangkok' SET country = 'Thailand';"> UPDATE customers WHERE city = 'Bangkok' SET country = 'Thailand';<br><br>
+                <h5><br>3) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบข้อมูลในตาราง<br><br></h5>
+                <input type = "radio" name = "question3" value = "SELECT"> SELECT<br><br>
+                <input type = "radio" name = "question3" value = "UPDATE"> UPDATE<br><br>
+                <input type = "radio" name = "question3" value = "DELETE"> DELETE<br><br>
+                <input type = "radio" name = "question3" value = "DROP"> DROP<br><br>
                 <p id="checkQ5"></p>
                 <br>
 
-                <h5><br>6) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการอัปเดตคอลัมน์ city และคอลัมน์ country<br><br></h5>
-                <input type = "radio" name = "question6" value = "UPDATE customers SET city = 'Bangkok' && country = 'Thailand' WHERE id = 1;"> UPDATE customers SET city = 'Bangkok' && country = 'Thailand' WHERE id = 1;<br><br>
-                <input type = "radio" name = "question6" value = "UPDATE customers SET city = 'Bangkok' , country = 'Thailand' WHERE id = 1;"> UPDATE customers SET city = 'Bangkok' , country = 'Thailand' WHERE id = 1;<br><br>
-                <input type = "radio" name = "question6" value = "UPDATE customers SET city = 'Bangkok' and country = 'Thailand' WHERE id = 1;"> UPDATE customers SET city = 'Bangkok' and country = 'Thailand' WHERE id = 1;<br><br>
-                <input type = "radio" name = "question6" value = "UPDATE customers SET city = 'Bangkok' & country = 'Thailand' WHERE id = 1;"> UPDATE customers SET city = 'Bangkok' & country = 'Thailand' WHERE id = 1;<br><br>
+                <h5><br>4) ถ้าต้องการลบข้อมูลทั้งหมดในตารางควรใช้คำสั่ง SQL ใด<br><br></h5>
+                <input type = "radio" name = "question4" value = "DELETE FROM table_name;"> DELETE FROM table_name;<br><br>
+                <input type = "radio" name = "question4" value = "DROP FROM table_name;"> DROP FROM table_name;<br><br>
+                <input type = "radio" name = "question4" value = "DELETE IN table_name;"> DELETE IN table_name;<br><br>
+                <input type = "radio" name = "question4" value = "DROP IN table_name;"> DROP IN table_name;<br><br>
+                <p id="checkQ3"></p>
+                <br>
+
+                <h5><br>5) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการลบตาราง customers เมื่อคอลัมน์ country เท่ากับ Thailand<br><br></h5>
+                <input type = "radio" name = "question5" value = "DROP IN customers WHERE country = 'Thailand';"> DROP IN customers WHERE country = 'Thailand';<br><br>
+                <input type = "radio" name = "question5" value = "DELETE IN customers WHERE country = 'Thailand';"> DELETE IN customers WHERE country = 'Thailand';<br><br>
+                <input type = "radio" name = "question5" value = "DROP FROM customers WHERE country = 'Thailand';"> DROP FROM customers WHERE country = 'Thailand';<br><br>
+                <input type = "radio" name = "question5" value = "DELETE FROM customers WHERE country = 'Thailand';"> DELETE FROM customers WHERE country = 'Thailand';<br><br>
+                <p id="checkQ4"></p>
+                <br>
+
+                <h5><br>6) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบข้อมูลในตารางที่มีเงื่อนไขสองเงื่อนไข<br><br></h5>
+                <input type = "radio" name = "question6" value = "DELETE FROM Customers WHERE country = 'Thailand' AND city = 'Bangkok';"> DELETE FROM Customers WHERE country = 'Thailand' AND city = 'Bangkok';<br><br>
+                <input type = "radio" name = "question6" value = "DELETE FROM Customers WHERE country = 'Thailand' , city = 'Bangkok';"> DELETE FROM Customers WHERE country = 'Thailand' , city = 'Bangkok';<br><br>
+                <input type = "radio" name = "question6" value = "DELETE FROM Customers WHERE country = 'Thailand' & city = 'Bangkok';"> DELETE FROM Customers WHERE country = 'Thailand' & city = 'Bangkok';<br><br>
+                <input type = "radio" name = "question6" value = "DELETE FROM Customers WHERE country = 'Thailand' && city = 'Bangkok';"> DELETE FROM Customers WHERE country = 'Thailand' && city = 'Bangkok';<br><br>
                 <p id="checkQ6"></p>
                 <br>
                 

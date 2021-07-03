@@ -140,7 +140,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuDel">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="quiz_delete.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
                         <a href="del_data_php.php">ลบข้อมูลด้วย PHP</a>
