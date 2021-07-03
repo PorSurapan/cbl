@@ -100,7 +100,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuShow">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="quiz_display.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
                         <a href="show_data_php.php">แสดงข้อมูลด้วย PHP</a>
