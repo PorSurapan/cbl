@@ -62,50 +62,6 @@
 
                 $id = $_SESSION['s_id'];
 
-                // Design
-                $sql = "SELECT user_id FROM designpre WHERE id = " . $id;
-                $rs = $con->query($sql);
-                if(!$rs || mysqli_num_rows($rs) == 0) {
-                    $design1 = "ยังไม่ทำ";
-                    $d1 = 0;
-                } else {
-                    $design1 = "ทำแล้ว";
-                    $d1 = 13;
-                }
-                
-                $sql = "SELECT user_id FROM designpost WHERE id = " . $id;
-                $rs = $con->query($sql);
-                if(!$rs || mysqli_num_rows($rs) == 0) {
-                    $design2 = "ยังไม่ทำ";
-                    $d2 = 0;
-                } else {
-                    $design2 = "ทำแล้ว";
-                    $d2 = 13;
-                }
-
-                // Connect
-                $sql = "SELECT user_id FROM connectpre WHERE id = " . $id;
-                $rs = $con->query($sql);
-                if(!$rs || mysqli_num_rows($rs) == 0) {
-                    $connect1 = "ยังไม่ทำ";
-                    $c1 = 0;
-                } else {
-                    $connect1 = "ทำแล้ว";
-                    $c1 = 13;
-                }
-                
-                $sql = "SELECT user_id FROM connectpost WHERE id = " . $id;
-                $rs = $con->query($sql);
-                if(!$rs || mysqli_num_rows($rs) == 0) {
-                    $connect2 = "ยังไม่ทำ";
-                    $c2 = 0;
-                } else {
-                    $connect2 = "ทำแล้ว";
-                    $c2 = 13;
-                }
-
-
-
                 // Profile
                 $sql = "SELECT * FROM profiles WHERE id = " . $id;
                 $rs = $con->query($sql);
@@ -115,13 +71,6 @@
                     $name = $row['name'];
                     $password = $row['password'];
                 }
-
-
-                
-
-                $sum = $d1 + $d2 + $c1 + $c2;
-                $sql = "UPDATE profiles SET progress = '" . $sum . "%' WHERE id = " . $id;
-                mysqli_query($con, $sql);
 
                 $con->close();
             ?>
@@ -197,18 +146,38 @@
                         </tr>
                         <tr>
                             <td>การเพิ่มข้อมูล</td>
+                            <td><?php echo $insert1 ?></td>
+                            <td><?php echo $insert2 ?></td>
                         </tr>
                         <tr>
                             <td>การแสดงข้อมูล</td>
+                            <td><?php echo $display1 ?></td>
+                            <td><?php echo $display2 ?></td>
                         </tr>
                         <tr>
                             <td>การแก้ไขข้อมูล</td>
+                            <td><?php echo $edit1 ?></td>
+                            <td><?php echo $edit2 ?></td>
                         </tr>
                         <tr>
                             <td>การลบข้อมูล</td>
+                            <td><?php echo $delete1 ?></td>
+                            <td><?php echo $delete2 ?></td>
                         </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>เนื้อหา</th>
+                            <th>สถานะ</th>
+                            <th>คะแนน</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
                         <tr>
                             <td>แบบทดสอบท้ายการเรียน</td>
+                            <td><?php echo $final ?></td>
+                            <td><?php echo $point ?></td>
                         </tr>
                     </tbody>
                 </table>
