@@ -62,7 +62,7 @@
 
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5 pt-5">
-            <h2 class="mb-4" id="top">แบบทดสอบหลังเรียน</h2>
+            <h2 class="mb-4" id="top">แบบทดสอบหลังเรียน - การเชื่อมต่อฐานข้อมูล</h2>
             <p>ในการทำแบบทดสอบครั้งแรก ระบบจะบันทึกคะแนนอัตโนมัติ</p>
 
             <form id="quiz" name="quiz">
