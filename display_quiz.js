@@ -85,7 +85,7 @@ function check()
     }
 
     // Question 2.1
-    if(question21 == "ajax") {
+    if(question21 == "complete") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ21").innerHTML = str;
 
@@ -99,7 +99,7 @@ function check()
     }
 
     // Question 2.2
-    if(question22 == "view_ajax.php") {
+    if(question22 == "document") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ22").innerHTML = str;
 
@@ -114,7 +114,7 @@ function check()
 
 
     // Question 2.3
-    if(question23 == "POST") {
+    if(question23 == "innerHTML") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ23").innerHTML = str;
 
@@ -128,7 +128,7 @@ function check()
     }
 
     // Question 2.4
-    if(question24 == "data") {
+    if(question24 == "gender") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ24").innerHTML = str;
 
@@ -144,8 +144,8 @@ function check()
     // Question 3
     if(question3 == "array") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ3").innerHTML = str;
-    correct3 = 2;
+        document.getElementById("checkQ3").innerHTML = str;
+        correct3 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ3").innerHTML = str;
@@ -154,8 +154,8 @@ function check()
     // Question 4
     if(question4 == "Table") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ4").innerHTML = str;
-    correct4 = 2;
+        document.getElementById("checkQ4").innerHTML = str;
+        correct4 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ4").innerHTML = str;
@@ -164,8 +164,8 @@ function check()
     // Question 5
     if(question5 == "SELECT * FROM table;") {
     str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ5").innerHTML = str;
-    correct5 = 2;
+        document.getElementById("checkQ5").innerHTML = str;
+        correct5 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ5").innerHTML = str;
@@ -174,8 +174,8 @@ function check()
     //  Question 6
     if(question6 == "<script></script>") {
     str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ6").innerHTML = str;
-    correct6 = 2;
+        document.getElementById("checkQ6").innerHTML = str;
+        correct6 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ6").innerHTML = str;

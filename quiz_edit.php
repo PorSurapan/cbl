@@ -76,22 +76,22 @@
                
                 <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูลใหม่ที่ชื่อว่า studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
-                <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , 'studyphp');</p> 
+                <h6 style="text-indent: 2.5em;">$con = new mysqli('localhost', 'root', '  ' , 'studyphp');</p> 
                 <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"> profiles <input type="text" id="textBox12" name="question12"   > username = 'George' WHERE id = '  1 ';</h6>
                 <p id="checkQ11"></p><p id="checkQ12"></p>
-                <h6>if ($conn->query( <input type="text" id="textBox13" name="question13"   > ) == TRUE) {</h6>
+                <h6 style="text-indent: 2.5em;">if ($con->query( <input type="text" id="textBox13" name="question13"   > ) == TRUE) {</h6>
                 <p id="checkQ13">
-                <h6 style="text-indent: 2.5em;">echo "Record updated successfully";</h6>
-                <h6>{ else {</h6> 
-                <h6 style="text-indent: 2.5em;">echo "Error updating record: " . $ <input type="text" id="textBox14" name="question14"   > ->error;<br>}<br>$conn->close();<br>?></h6>
+                <h6 style="text-indent: 5em;">echo "Record updated successfully";</h6>
+                <h6 style="text-indent: 2.5em;">} else {</h6> 
+                <h6 style="text-indent: 5em;">echo "Error updating record: " . $ <input type="text" id="textBox14" name="question14"   > ->error;<br>
+                <h6 style="text-indent: 2.5em;">}</h6>
+                <h6 style="text-indent: 2.5em;">$con->close();<br>?></h6>
                 <p id="checkQ14">
                 <br>
 
                 <h5><br>2) เขียนคำสั่งที่ถูกต้องเพื่อใช้ ajax แก้ไขข้อมูลจากไฟล์ update_ajax.php<br><br></h5>
-                <h6>$.ajax({<br></h6>
-                <h6 style="text-indent: 2.5em;">url: "update_ajax.php",</h6>  
-                <h6 style="text-indent: 2.5em;">type: "POST",</h6>
-                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox21" name="question21"> : false,</h6>
+                <h6>function stateChange() {<br></h6>
+                <h6 style="text-indent: 2.5em;">if (xmlHttp.readyState == 4 || xmlHttp.readyState == "<input type="text" id="textBox21" name="question21">") {</h6>
                 <p id="checkQ21"></p> 
                 <h6 style="text-indent: 2.5em;">data:{</h6>
                 <h6 style="text-indent: 3em;">username: $('#username_modal').val(),</h6>

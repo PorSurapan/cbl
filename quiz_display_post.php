@@ -76,35 +76,26 @@
                
                 <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูลใหม่ที่ชื่อว่า studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
-                <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , ' <input type="text" id="textBox11" name="question11">');</h6><p id="checkQ11"></p> 
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox12" name="question12"   > * FROM menu";</h6>
-                <p id="checkQ12"></p>
+                <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , ' <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span>');</h6>
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> * FROM menu";</h6>
                 <h6 style="text-indent: 2.5em;">$result = $connect->query($sql);<br>?></h6>
                 <h6>&#60;body></h6>
-                <h6 style="text-indent: 2.5em;">&#60;?php while($row = <input type="text" id="textBox13" name="question13"   > -> <input type="text" id="textBox14" name="question14">()): ?></h6><p id="checkQ14"></p> 
-                <p id="checkQ1"></p><p id="checkQ13"></p>
+                <h6 style="text-indent: 2.5em;">&#60;?php while($row = <input type="text" id="textBox13" name="question13"><span id="checkQ13"></span> -> <input type="text" id="textBox14" name="question14"><span id="checkQ14"></span>()): ?></h6> 
                 <h6 style="text-indent: 2.5em;">&#60;tr></h6>
                 <h6 style="text-indent: 3em;">&#60;td>&#60;?php echo $row['id']; ?>&#60;/td></h6>
                 <h6 style="text-indent: 3em;">&#60;td>&#60;?php echo $row['username']; ?>&#60;/td></h6>
                 <h6 style="text-indent: 3em;">&#60;td>&#60;?php echo $row['name']; ?>&#60;/td></h6>
                 <h6 style="text-indent: 2.5em;">&#60;/tr></h6>
                 <h6 style="text-indent: 2.5em;">&#60;?php endwhile ?><br>&#60;/body></h6>
-                <p id="checkQ2"></p>
                 <br>
 
-                <h5><br>2) เขียนคำสั่งที่ถูกต้องเพื่อใช้ ajax ดึงข้อมูลมาแสดงจากไฟล์ view_ajax.php โดยใช้ฟังก์ชัน post<br><br></h5>
-                <h6>$.<input type="text" id="textBox21" name="question21">({<br></h6>
-                    <p id="checkQ21"></p> 
-                <h6 style="text-indent: 2.5em;">url: " <input type="text" id="textBox22" name="question22"> ",</h6>
-                <p id="checkQ22"></p>  
-                <h6 style="text-indent: 2.5em;">type: " <input type="text" id="textBox23" name="question23"> ",</h6>
-                <p id="checkQ23"></p> 
-                <h6 style="text-indent: 2.5em;">cache: false,</h6>
-                <h6 style="text-indent: 2.5em;">success: function(data){</h6>
-                <h6 style="text-indent: 3.5em;">alert(data);</h6>
-                <h6 style="text-indent: 3.5em;">$('#table').html( <input type="text" id="textBox24" name="question24"> );</h6>
-                <p id="checkQ24"></p> 
-                <h6 style="text-indent: 3em;">}<br>});</h6>
+                <h5><br>2) เขียนคำสั่งฟังก์ชัน เพื่อแสดงค่าเพศที่ได้รับมา ให้แสดงใน Tag ที่มี id = "sex" ให้ทำงานได้สมบูรณ์<br><br></h5>
+                <h6>function stateChange() {</h6>
+                <h6 style="text-indent: 2.5em;">if (xmlHttp.readyState == 4 || xmlHttp.readyState == " <input type="text" id="textBox21" name="question21"><span id="checkQ21"></span> ") {</h6>
+                <h6 style="text-indent: 5em;">var gender = xmlHttp.responseText;</h6>
+                <h6 style="text-indent: 5em;"><input type="text" id="textBox22" name="question22"><span id="checkQ22"></span>.getElementById("sex").<input type="text" id="textBox23" name="question23"><span id="checkQ23"></span> = <input type="text" id="textBox24" name="question24"><span id="checkQ24"></span>;</h6>
+                <h6 style="text-indent: 2.5em;">}</h6>
+                <h6>}</h6>
                 <br>
                 
 

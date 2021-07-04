@@ -77,30 +77,21 @@
             <form id="quiz" name="quiz">
                
                 <h5><br>1) จงเขียนคำสั่งที่ถูกต้องเพื่อเพิ่มข้อมูลไปยังตาราง profiles <br><br></h5>
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11" > INTO profiles (firstname, lastname, email)</h6>
-                <p id="checkQ11"></p>
-                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox12" name="question12" > ('John', 'Doe', 'john@gmail.com')";<br><br></h6>
-                <p id="checkQ12"></p>
-                <h6 style="text-indent: 4em;">$result = mysqli_query($con, <input type="text" id="textBox13" name="question13" >);</h6> 
-	            <p id="checkQ13"></p>
-                <h6 style="text-indent: 2.5em;">if(!<input type="text" id="textBox14" name="question14" >){</h6> 
-                <p id="checkQ14"></p>
-                <h6 style="text-indent: 4em;">echo "Record add successfully";</h6>   
-                <p id="checkQ2"></p>
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span> INTO profiles (firstname, lastname, email)</h6>
+                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> ('John', 'Doe', 'john@gmail.com')";<br><br></h6>
+                <h6 style="text-indent: 4em;">$result = mysqli_query($con, <input type="text" id="textBox13" name="question13"><span id="checkQ13"></span>);</h6> 
+                <h6 style="text-indent: 2.5em;">if(!<input type="text" id="textBox14" name="question14"><span id="checkQ14"></span>){</h6> 
+                <h6 style="text-indent: 4em;">echo "Record add successfully";</h6>
                 <br><br>
 
                 <h5><br>2) จงเขียนคำสั่งฟังก์ชัน gender() เพื่อรับค่าเพศให้ทำงานได้อย่างสมบูรณ์<br><br></h5>
                 <h6>function gender(str)<br><br>{</h6>
                 <h6 style="text-indent: 2.5em;">createXMLHttpRequest();</h6>
                 <h6 style="text-indent: 2.5em;">xmlHttp.onreadystatechange = stateChange;<br></h6>
-                <h6  style="text-indent: 2.5em;">var <input type="text" id="textBox21" name="question21" > = "gender.php";</h6>
-                <p id="checkQ21"></p>
-                <h6  style="text-indent: 2.5em;">url = url + "?gender=" + <input type="text" id="textBox22" name="question22" >;</h6>
-                <p id="checkQ22"></p>
-                <h6  style="text-indent: 2.5em;">xmlHttp.<input type="text" id="textBox23" name="question23" >("GET", url, true);</h6>
-                <p id="checkQ23"></p>
-                <h6  style="text-indent: 2.5em;">xmlHttp.<input type="text" id="textBox24" name="question24" >(null);</h6>
-                <p id="checkQ24"></p>
+                <h6  style="text-indent: 2.5em;">var <input type="text" id="textBox21" name="question21"><span id="checkQ21"></span> = "gender.php";</h6>
+                <h6  style="text-indent: 2.5em;">url = url + "?gender=" + <input type="text" id="textBox22" name="question22"><span id="checkQ22"></span>;</h6>
+                <h6  style="text-indent: 2.5em;">xmlHttp.<input type="text" id="textBox23" name="question23"><span id="checkQ23"></span>("GET", url, true);</h6>
+                <h6  style="text-indent: 2.5em;">xmlHttp.<input type="text" id="textBox24" name="question24"><span id="checkQ24"></span>(null);</h6>
                 <h6>}</h6>
                 <br><br>
 

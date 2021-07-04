@@ -58,7 +58,7 @@
         $i1 = 13;
     }
 
-    $sql = "SELECT user_id FROM insertppost WHERE user_id = " . $id;
+    $sql = "SELECT user_id FROM insertpost WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $insert2 = "ยังไม่ทำ";
