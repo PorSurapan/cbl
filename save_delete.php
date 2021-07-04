@@ -24,7 +24,7 @@
 
         $finish = 1;
         $status = "ไม่ผ่าน";
-        if($point >= 10)
+        if($point >= 12)
             $status = "ผ่าน";
 
         $sql = "INSERT INTO deletepre (user_id, user_username, user_name, pre_test, pass, finished)

@@ -5,129 +5,165 @@
     $id = $_SESSION['s_id'];
     
     // Design
-    $sql = "SELECT user_id FROM designpre WHERE user_id = " . $id;
+    $sql = "SELECT * FROM designpre WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $design1 = "ยังไม่ทำ";
         $d1 = 0;
     } else {
-        $design1 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $d0 = $row['pre_test'] . "/12) " . $row['pass'];
+        }
+        $design1 = "ทำแล้ว (" . $d0;
         $d1 = 7;
     }
     
-    $sql = "SELECT user_id FROM designpost WHERE user_id = " . $id;
+    $sql = "SELECT * FROM designpost WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $design2 = "ยังไม่ทำ";
         $d2 = 0;
     } else {
-        $design2 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $d0 = $row['post_test'] . "/12) " . $row['pass'];
+        }
+        $design2 = "ทำแล้ว (" . $d0;
         $d2 = 7;
     }
 
 
     // Connect
-    $sql = "SELECT user_id FROM connectpre WHERE user_id = " . $id;
+    $sql = "SELECT * FROM connectpre WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $connect1 = "ยังไม่ทำ";
         $c1 = 0;
     } else {
-        $connect1 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $c0 = $row['pre_test'] . "/18) " . $row['pass'];
+        }
+        $connect1 = "ทำแล้ว (" . $c0;
         $c1 = 7;
     }
     
-    $sql = "SELECT user_id FROM connectpost WHERE user_id = " . $id;
+    $sql = "SELECT * FROM connectpost WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $connect2 = "ยังไม่ทำ";
         $c2 = 0;
     } else {
-        $connect2 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $c0 = $row['post_test'] . "/18) " . $row['pass'];
+        }
+        $connect2 = "ทำแล้ว (" . $c0;
         $c2 = 7;
     }
 
     // Insert
-    $sql = "SELECT user_id FROM insertpre WHERE user_id = " . $id;
+    $sql = "SELECT * FROM insertpre WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $insert1 = "ยังไม่ทำ";
         $i1 = 0;
     } else {
-        $insert1 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $i0 = $row['pre_test'] . "/16) " . $row['pass'];
+        }
+        $insert1 = "ทำแล้ว (" . $i0;
         $i1 = 7;
     }
 
-    $sql = "SELECT user_id FROM insertpost WHERE user_id = " . $id;
+    $sql = "SELECT * FROM insertpost WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $insert2 = "ยังไม่ทำ";
         $i2 = 0;
     } else {
-        $insert2 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $i0 = $row['post_test'] . "/16) " . $row['pass'];
+        }
+        $insert2 = "ทำแล้ว (" . $i0;
         $i2 = 7;
     }
 
     // Display
-    $sql = "SELECT user_id FROM displaypre WHERE user_id = " . $id;
+    $sql = "SELECT * FROM displaypre WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $display1 = "ยังไม่ทำ";
         $p1 = 0;
     } else {
-        $display1 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $p0 = $row['pre_test'] . "/16) " . $row['pass'];
+        }
+        $display1 = "ทำแล้ว (" . $p0;
         $p1 = 7;
     }
 
-    $sql = "SELECT user_id FROM displaypost WHERE user_id = " . $id;
+    $sql = "SELECT * FROM displaypost WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $display2 = "ยังไม่ทำ";
         $p2 = 0;
     } else {
-        $display2 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $p0 = $row['post_test'] . "/16) " . $row['pass'];
+        }
+        $display2 = "ทำแล้ว (" . $p0;
         $p2 = 7;
     }
 
     // Edit
-    $sql = "SELECT user_id FROM editpre WHERE user_id = " . $id;
+    $sql = "SELECT * FROM editpre WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $edit1 = "ยังไม่ทำ";
         $e1 = 0;
     } else {
-        $edit1 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $e0 = $row['pre_test'] . "/16) " . $row['pass'];
+        }
+        $edit1 = "ทำแล้ว (" . $e0;
         $e1 = 7;
     }
 
-    $sql = "SELECT user_id FROM editpost WHERE user_id = " . $id;
+    $sql = "SELECT * FROM editpost WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $edit2 = "ยังไม่ทำ";
         $e2 = 0;
     } else {
-        $edit2 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $e0 = $row['post_test'] . "/16) " . $row['pass'];
+        }
+        $edit2 = "ทำแล้ว (" . $e0;
         $e2 = 7;
     }
 
     // Delete
-    $sql = "SELECT user_id FROM deletepre WHERE user_id = " . $id;
+    $sql = "SELECT * FROM deletepre WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $delete1 = "ยังไม่ทำ";
         $t1 = 0;
     } else {
-        $delete1 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $t0 = $row['pre_test'] . "/16) " . $row['pass'];
+        }
+        $delete1 = "ทำแล้ว (" . $t0;
         $t1 = 7;
     }
 
-    $sql = "SELECT user_id FROM deletepost WHERE user_id = " . $id;
+    $sql = "SELECT * FROM deletepost WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $delete2 = "ยังไม่ทำ";
         $t2 = 0;
     } else {
-        $delete2 = "ทำแล้ว";
+        while($row = $rs->fetch_assoc()) {
+            $t0 = $row['post_test'] . "/16) " . $row['pass'];
+        }
+        $delete2 = "ทำแล้ว (" . $t0;
         $t2 = 7;
     }
 
