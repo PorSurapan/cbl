@@ -285,7 +285,7 @@
                         <a href="update_data_ajax.php">แก้ไขข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="quiz_edit_post.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
@@ -305,7 +305,7 @@
                         <a href="del_data_ajax.php">ลบข้อมูลด้วย PHP & AJAX</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="quiz_delete_post.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>

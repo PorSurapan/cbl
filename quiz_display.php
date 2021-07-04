@@ -74,9 +74,9 @@
         
             <form id="quiz" name="quiz">
                
-                <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูลใหม่ที่ชื่อว่า studyphp<br><br></h5>
+                <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูล studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
-                <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , ' <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span>');</h6>
+                <h6 style="text-indent: 2.5em;">$connect = mysqli_connect('localhost', 'root', '  ' , ' <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span>');</h6>
                 <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> * FROM menu";</h6>
                 <h6 style="text-indent: 2.5em;">$result = $connect->query($sql);<br>?></h6>
                 <h6>&#60;body></h6>

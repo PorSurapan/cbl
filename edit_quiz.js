@@ -71,7 +71,7 @@ function check()
     }
 
      // Question 1.4
-     if(question14 == "conn") {
+     if(question14 == "con") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ14").innerHTML = str;
 
@@ -85,7 +85,7 @@ function check()
     }
 
     // Question 2.1
-    if(question21 == "cache") {
+    if(question21 == "saveData.php") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ21").innerHTML = str;
 
@@ -99,7 +99,7 @@ function check()
     }
 
     // Question 2.2
-    if(question22 == "dataResult") {
+    if(question22 == "?id=") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ22").innerHTML = str;
 
@@ -114,7 +114,7 @@ function check()
 
 
     // Question 2.3
-    if(question23 == "statusCode") {
+    if(question23 == "&name=") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ23").innerHTML = str;
 
@@ -128,7 +128,7 @@ function check()
     }
 
     // Question 2.4
-    if(question24 == "reload") {
+    if(question24 == "GET") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ24").innerHTML = str;
 
@@ -144,8 +144,8 @@ function check()
     // Question 3
     if(question3 == "UPDATE table_name SET column1 = value1, WHERE condition;") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ3").innerHTML = str;
-    correct3 = 2;
+        document.getElementById("checkQ3").innerHTML = str;
+        correct3 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ3").innerHTML = str;
@@ -154,8 +154,8 @@ function check()
     // Question 4
     if(question4 == "UPDATE city = 'Bangkok' SET customers;") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ4").innerHTML = str;
-    correct4 = 2;
+        document.getElementById("checkQ4").innerHTML = str;
+        correct4 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ4").innerHTML = str;
@@ -163,9 +163,9 @@ function check()
 
     // Question 5
     if(question5 == "UPDATE customers SET city = 'Bangkok' WHERE country = 'Thailand';") {
-    str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ5").innerHTML = str;
-    correct5 = 2;
+        str = "<font size='3' color='green'>ถูกต้อง</font>";
+        document.getElementById("checkQ5").innerHTML = str;
+        correct5 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ5").innerHTML = str;
@@ -173,9 +173,9 @@ function check()
 
     //  Question 6
     if(question6 == "UPDATE customers SET city = 'Bangkok' , country = 'Thailand' WHERE id = 1;") {
-    str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ6").innerHTML = str;
-    correct6 = 2;
+        str = "<font size='3' color='green'>ถูกต้อง</font>";
+        document.getElementById("checkQ6").innerHTML = str;
+        correct6 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ6").innerHTML = str;

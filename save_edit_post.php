@@ -6,7 +6,7 @@
     $con->query("SET NAMES UTF8");
 
     if ($id != null)
-        $sql = "SELECT user_id FROM displaypost WHERE user_id = $id";
+        $sql = "SELECT user_id FROM editpost WHERE user_id = $id";
 
     $rs = $con->query($sql);
     
@@ -27,7 +27,7 @@
         if($point >= 12)
             $status = "ผ่าน";
 
-        $sql = "INSERT INTO displaypost (user_id, user_username, user_name, post_test, pass, finished)
+        $sql = "INSERT INTO editpost (user_id, user_username, user_name, post_test, pass, finished)
                 VALUES('" . $id . "', '" . $username . "', '" . $name . "', '" . $point . "', '" . $status . "', '" . $finish . "')";
 
         $rs = $con->query($sql);
