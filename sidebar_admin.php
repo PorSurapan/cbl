@@ -21,7 +21,7 @@
                         <a href="all_learner.php">ผู้เรียนทั้งหมด</a>
                     </li>
                     <li>
-                        <a href="static.php">สถิติ</a>
+                        <a href="static.php">สถิติและกราฟ</a>
                     </li>
                 </ul>
             </li>
@@ -74,10 +74,10 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuShow">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="pretest_quiz_display.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="posttest_quiz_display.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
@@ -88,10 +88,10 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuEdit">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="pretest_quiz_edit.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="posttest_quiz_edit.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
@@ -102,17 +102,17 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuDel">
                     <li>
-                        <a href="#">แบบทดสอบก่อนเรียน</a>
+                        <a href="pretest_quiz_delete.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="#">แบบทดสอบหลังเรียน</a>
+                        <a href="posttest_quiz_delete.php">แบบทดสอบหลังเรียน</a>
                     </li>
                 </ul>
             </li>
 
             <!-- Final test -->
             <li>
-                <a href="#">แบบทดสอบท้ายการเรียน</a>
+                <a href="posttest_quiz.php">แบบทดสอบท้ายการเรียน</a>
             </li>
 
             <!-- Logout -->
