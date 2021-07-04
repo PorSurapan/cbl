@@ -137,6 +137,17 @@
     }
 
 
+    // Final Test
+    $sql = "SELECT pass FROM posttest";
+    $rs = $con->query($sql);
+    $post_test_pass = 0;
+    $post_test_fail = 0;
+    while($row = $rs->fetch_assoc()) {
+        if($row['pass'] == "ผ่าน")
+            $post_test_pass = $post_test_pass + 1;
+        else
+            $post_test_fail = $post_test_fail + 1;
+    }
 
 
     $con->close();

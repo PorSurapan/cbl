@@ -168,7 +168,7 @@
     }
 
     // Final Exam
-    $sql = "SELECT * FROM final WHERE user_id = " . $id;
+    $sql = "SELECT * FROM posttest WHERE user_id = " . $id;
     $rs = $con->query($sql);
     if(!$rs || mysqli_num_rows($rs) == 0) {
         $final = "ยังไม่ทำ";
@@ -176,7 +176,7 @@
         $f = 0;
     } else {
         while($row = $rs->fetch_assoc()) {
-            $point = $row['point'];
+            $point = $row['test'] . "/16 (" . $row['pass'] . ")";
         }
         $final = "ทำแล้ว";
         $f = 16;

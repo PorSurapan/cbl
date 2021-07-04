@@ -77,6 +77,12 @@
                     <td><div id="piechart_editpost"></div></td>
                 </tr>
             </table>
+            <hr>
+            <table width="100%">
+                <tr>
+                    <td><div id="piechart_posttest"></div></td>
+                </tr>
+            </table>
 			
 		</div>
 	</div>

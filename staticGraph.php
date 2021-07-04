@@ -231,3 +231,27 @@
         chart.draw(data, options);
     }
 </script>
+
+
+<!-- Pie chart Post Test ------------------------------------------------------ -->
+<input type="hidden" id="post_test_pass" value="<?php echo $post_test_pass ?>">
+<input type="hidden" id="post_test_fail" value="<?php echo $post_test_fail ?>">
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChartPostTest);
+
+    var post_test_pass = Number(document.getElementById("post_test_pass").value);
+    var post_test_fail = Number(document.getElementById("post_test_fail").value);
+
+    function drawChartPostTest() {
+        var data = google.visualization.arrayToDataTable([
+            ['Pass', 'Count'],
+            ['ผ่าน', post_test_pass],
+            ['ไม่ผ่าน', post_test_fail]
+        ]);
+
+        var options = {'title':'แบบทดสอบท้ายการเรียน', 'width':900, 'height':400, backgroundColor: '#fafafa', is3D: false};
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_posttest'));
+        chart.draw(data, options);
+    }
+</script>

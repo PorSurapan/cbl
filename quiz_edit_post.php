@@ -77,7 +77,7 @@
                 <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแก้ไขข้อมูลในฐานข้อมูล studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
                 <h6 style="text-indent: 2.5em;">$con = mysqli_connect('localhost', 'root', '  ' , 'studyphp');</h6> 
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span> profiles <input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> username = 'George' WHERE id = 1;</h6>
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span> profiles <input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> username = 'George' WHERE id = 1";</h6>
                 <h6 style="text-indent: 2.5em;">if ($con->query( <input type="text" id="textBox13" name="question13"><span id="checkQ13"></span> ) == TRUE) {</h6>
                 <h6 style="text-indent: 5em;">echo "Record updated successfully";</h6>
                 <h6 style="text-indent: 2.5em;">} else {</h6> 

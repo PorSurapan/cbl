@@ -119,69 +119,55 @@
                 <h5><br>3) จงเขียนคำส้ั่งที่ถูกต้องเพื่อทำการเชื่อมต่อฐานข้อมูลที่ชื่อว่า studyphp<br></h5>
                 <h5><br>4) จงเขียนคำส้ั่งที่ถูกต้องเพื่อปิดการเชื่อมต่อฐานข้อมูล<br><br></h5>
                 <h6>&#60;?php<br><br></h6>
-                <h6 style="text-indent: 2.5em;">&#36;con = mysqli_connect(" <input type="text" id="textBox2" name="question2" placeholder="ข้อที่ 2"> ", "root", "");</h6>
-                <p id="checkQ2"></p>
-                <h6 style="text-indent: 2.5em;">if(!$con){<br><br></h6>
+                <h6 style="text-indent: 2.5em;">&#36;con = mysqli_connect(" <input type="text" id="textBox2" name="question2" placeholder="ข้อที่ 2"><span id="checkQ2"></span> ", "root", "");</h6>
+                <h6 style="text-indent: 2.5em;">if(!$con) {<br></h6>
                 <h6 style="text-indent: 5em;">die("Could not connect: " . mysqli_error());</h6>
-                <h6 style="text-indent: 2.5em;">{</h6>
-                <h6 style="text-indent: 2.5em;">mysqli_select_db($con," <input type="text" id="textBox3" name="question3" placeholder="ข้อที่ 3"> ");<br><br></h6>
-                <p id="checkQ3"></p>
+                <h6 style="text-indent: 2.5em;">}</h6>
+                <h6 style="text-indent: 2.5em;">mysqli_select_db($con," <input type="text" id="textBox3" name="question3" placeholder="ข้อที่ 3"><span id="checkQ3"></span> ");<br><br></h6>
                 <h6 style="text-indent: 2.5em;">$con->query("SET NAMES UTF8");<br><br></h6>
-                <h6 style="text-indent: 2.5em;">mysqli_<input type="text" id="textBox4" name="question4" placeholder="ข้อที่ 4">($con);<br><br>?></h6>
-                <p id="checkQ4"></p>
+                <h6 style="text-indent: 2.5em;">mysqli_<input type="text" id="textBox4" name="question4" placeholder="ข้อที่ 4"><span id="checkQ4"></span>($con);<br><br>?></h6>
                 <br>
 
                 <h5><br>5) จงเขียนคำสั่งที่ถูกต้องเพื่อเพิ่มข้อมูลไปยังตาราง profiles <br><br></h5>
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox51" name="question51" > INTO profiles (firstname, lastname, email)</h6>
-                <p id="checkQ51"></p>
-                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox52" name="question52" > ('John', 'Doe', 'john@gmail.com')";<br><br></h6>
-                <p id="checkQ52"></p>
-                <h6 style="text-indent: 4em;">$result = mysqli_query($con, <input type="text" id="textBox53" name="question53" >);</h6> 
-	            <p id="checkQ53"></p>
-                <h6 style="text-indent: 2.5em;">if(!<input type="text" id="textBox54" name="question54" >){</h6> 
-                <p id="checkQ54"></p>
-                <h6 style="text-indent: 4em;">echo "Record add successfully";</h6>   
+                <h6>$sql = " <input type="text" id="textBox51" name="question51"><span id="checkQ51"></span> INTO profiles (firstname, lastname, email)<br></h6>
+                <h6><input type="text" id="textBox52" name="question52"><span id="checkQ52"></span> ('John', 'Doe', 'john@gmail.com')";<br><br></h6>
+                <h6>$result = mysqli_query($con, <input type="text" id="textBox53" name="question53"><span id="checkQ53"></span>);</h6> 
+                <h6>if(!<input type="text" id="textBox54" name="question54"><span id="checkQ54"></span>){</h6>
+                <h6 style="text-indent: 2.5em;">echo "Record add successfully";<br></h6>
+                <h6>}</h6>
                 <br><br>
 
-                <h5><br>6) เขียนคำสั่งที่ถูกต้องเพื่อใช้ ajax ดึงข้อมูลมาแสดงจากไฟล์ view_ajax.php โดยใช้ฟังก์ชัน post<br><br></h5>
-                <h6>$.<input type="text" id="textBox61" name="question61">({<br></h6>
-                    <p id="checkQ61"></p> 
-                <h6 style="text-indent: 2.5em;">url: " <input type="text" id="textBox62" name="question62"> ",</h6>
-                <p id="checkQ62"></p>  
-                <h6 style="text-indent: 2.5em;">type: " <input type="text" id="textBox63" name="question63"> ",</h6>
-                <p id="checkQ63"></p> 
-                <h6 style="text-indent: 2.5em;">cache: false,</h6>
-                <h6 style="text-indent: 2.5em;">success: function(data){</h6>
-                <h6 style="text-indent: 3.5em;">alert(data);</h6>
-                <h6 style="text-indent: 3.5em;">$('#table').html( <input type="text" id="textBox64" name="question64"> );</h6>
-                <p id="checkQ64"></p> 
-                <h6 style="text-indent: 3em;">}<br>});</h6>
+                <h5><br>6) เขียนคำสั่งฟังก์ชัน เพื่อแสดงค่าเพศที่ได้รับมา ให้แสดงใน Tag ที่มี id = "sex" ให้ทำงานได้สมบูรณ์<br><br></h5>
+                <h6>function stateChange() {</h6>
+                <h6 style="text-indent: 2.5em;">if (xmlHttp.readyState == 4 || xmlHttp.readyState == " <input type="text" id="textBox61" name="question61"><span id="checkQ61"></span> ") {</h6>
+                <h6 style="text-indent: 5em;">var gender = xmlHttp.responseText;</h6>
+                <h6 style="text-indent: 5em;"><input type="text" id="textBox62" name="question62"><span id="checkQ62"></span>.getElementById("sex").<input type="text" id="textBox63" name="question63"><span id="checkQ63"></span>  = <input type="text" id="textBox64" name="question64"><span id="checkQ64"></span>;</h6>
+                <h6 style="text-indent: 2.5em;">}</h6>
+                <h6>}</h6>
                 <br>
 
-                <h5><br>7) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูลใหม่ที่ชื่อว่า studyphp<br><br></h5>
+                <h5><br>7) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและอัปเดตข้อมูลในฐาน studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
-                <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , 'studyphp');</p> 
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox71" name="question71"> profiles <input type="text" id="textBox72" name="question72"   > username = 'George' WHERE id = '  1 ';</h6>
-                <p id="checkQ71"></p><p id="checkQ72"></p>
-                <h6>if ($conn->query( <input type="text" id="textBox73" name="question73"   > ) == TRUE) {</h6>
-                <p id="checkQ73">
-                <h6 style="text-indent: 2.5em;">echo "Record updated successfully";</h6>
-                <h6>{ else {</h6> 
-                <h6 style="text-indent: 2.5em;">echo "Error updating record: " . $ <input type="text" id="textBox74" name="question74"   > ->error;<br>}<br>$conn->close();<br>?></h6>
-                <p id="checkQ74">
+                <h6 style="text-indent: 2.5em;">$con = mysqli_connect('localhost', 'root', '  ' , 'studyphp');</p> 
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox71" name="question71"><span id="checkQ71"></span> profiles <input type="text" id="textBox72" name="question72"><span id="checkQ72"></span> username = 'George' WHERE id = 1";</h6>
+                <h6 style="text-indent: 2.5em;">if ($con->query( <input type="text" id="textBox73" name="question73"><span id="checkQ73"></span> ) == TRUE) {</h6>
+                <h6 style="text-indent: 5em;">echo "Record updated successfully";</h6>
+                <h6 style="text-indent: 2.5em;">} else {</h6> 
+                <h6 style="text-indent: 5em;">echo "Error updating record: " . $ <input type="text" id="textBox74" name="question74"><span id="checkQ74"></span> ->error;<br></h6>
+                <h6 style="text-indent: 2.5em;">}<br></h6>
+                <h6 style="text-indent: 2.5em;">$con->close();<br>?></h6>
                 <br>
 
-                <h5><br>8) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูลใหม่ที่ชื่อว่า studyphp<br><br></h5>
+                <h5><br>8) เขียนคำสั่งที่ถูกต้องเพื่อลบข้อมูลในฐานข้อมูล studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
-                <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , 'studyphp');</p> 
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox81" name="question81"> <input type="text" id="textBox82" name="question82"> profiles WHERE id = '  1 ';</h6>
-                <p id="checkQ81"></p><p id="checkQ82"></p>
-                <h6>if ($conn-> <input type="text" id="textBox83" name="question83"> ($sql) == TRUE) {</h6>
-                <p id="checkQ83">
-                <h6 style="text-indent: 2.5em;">echo "Record updated successfully";</h6>
-                <h6>{ else {</h6> 
-                <h6 style="text-indent: 2.5em;">echo "Error updating record: " . $conn ->error;<br>}<br>$<input type="text" id="textBox84" name="question84"> ->close();<br>?></h6>
-                <p id="checkQ84">
+                <h6 style="text-indent: 2.5em;">$con = mysqli_connect('localhost', 'root', '  ' , 'studyphp');</p></h6>
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox81" name="question81"><span id="checkQ81"></span> <input type="text" id="textBox82" name="question82"><span id="checkQ82"></span> profiles WHERE id = 1";</h6>
+                <h6 style="text-indent: 2.5em;">if ($con-> <input type="text" id="textBox83" name="question83"><span id="checkQ83"></span> ($sql) == TRUE) {</h6>
+                <h6 style="text-indent: 5em;">echo "Record deleted successfully";</h6>
+                <h6 style="text-indent: 2.5em;">} else {</h6> 
+                <h6 style="text-indent: 5em;">echo "Error deleting record: " . $con ->error;<br></h6>
+                <h6 style="text-indent: 2.5em;">}<br></h6>
+                <h6 style="text-indent: 2.5em;">$<input type="text" id="textBox84" name="question84"><span id="checkQ84"></span> ->close();<br>?></h6>
                 <br>
 
                 <h5><br>9) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อเพิ่มคอลัมน์ประเภท DATE ที่ชื่อว่า Birthday จากตาราง Persons<br><br></h5>
@@ -272,7 +258,7 @@
                 <p id="checkQ19"></p>
                 <br>
 
-                <h5><br>20) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการลบตาราง customers เมื่อคอลัมน์ country เท่ากับ Thailand<br><br></h5>
+                <h5><br>20) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการลบข้อมูลในตาราง customers เมื่อคอลัมน์ country เท่ากับ Thailand<br><br></h5>
                 <input type = "radio" name = "question20" value = "DROP IN customers WHERE country = 'Thailand';"> DROP IN customers WHERE country = 'Thailand';<br><br>
                 <input type = "radio" name = "question20" value = "DELETE IN customers WHERE country = 'Thailand';"> DELETE IN customers WHERE country = 'Thailand';<br><br>
                 <input type = "radio" name = "question20" value = "DROP FROM customers WHERE country = 'Thailand';"> DROP FROM customers WHERE country = 'Thailand';<br><br>

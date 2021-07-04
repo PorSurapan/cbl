@@ -79,7 +79,7 @@
                 <h5><br>1) จงเขียนคำสั่งที่ถูกต้องเพื่อเพิ่มข้อมูลไปยังตาราง profiles <br><br></h5>
                 <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span> INTO profiles (firstname, lastname, email)</h6>
                 <h6 style="text-indent: 2.5em;"><input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> ('John', 'Doe', 'john@gmail.com')";<br><br></h6>
-                <h6 style="text-indent: 4em;">$result = mysqli_query($con, <input type="text" id="textBox13" name="question13"><span id="checkQ13"></span>);</h6> 
+                <h6 style="text-indent: 2.5em;">$result = mysqli_query($con, <input type="text" id="textBox13" name="question13"><span id="checkQ13"></span>);</h6> 
                 <h6 style="text-indent: 2.5em;">if(!<input type="text" id="textBox14" name="question14"><span id="checkQ14"></span>){</h6> 
                 <h6 style="text-indent: 4em;">echo "Record add successfully";</h6>
                 <br><br>

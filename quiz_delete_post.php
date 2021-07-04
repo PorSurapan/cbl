@@ -76,8 +76,8 @@
                
                 <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อลบข้อมูลในฐานข้อมูล studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
-                <h6 style="text-indent: 2.5em;">$con = mysqli_connect('localhost', 'root', '  ' , 'studyphp');</p> 
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span> <input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> profiles WHERE id = '  1 ';</h6>
+                <h6 style="text-indent: 2.5em;">$con = mysqli_connect('localhost', 'root', '  ' , 'studyphp');</p></h6>
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span> <input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> profiles WHERE id = 1";</h6>
                 <h6 style="text-indent: 2.5em;">if ($con-> <input type="text" id="textBox13" name="question13"><span id="checkQ13"></span> ($sql) == TRUE) {</h6>
                 <h6 style="text-indent: 5em;">echo "Record deleted successfully";</h6>
                 <h6 style="text-indent: 2.5em;">} else {</h6> 
@@ -119,7 +119,7 @@
                 <p id="checkQ4"></p>
                 <br>
 
-                <h5><br>5) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการลบตาราง customers เมื่อคอลัมน์ country เท่ากับ Thailand<br><br></h5>
+                <h5><br>5) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการลบข้อมูลในตาราง customers เมื่อคอลัมน์ country เท่ากับ Thailand<br><br></h5>
                 <input type = "radio" name = "question5" value = "DROP IN customers WHERE country = 'Thailand';"> DROP IN customers WHERE country = 'Thailand';<br><br>
                 <input type = "radio" name = "question5" value = "DELETE IN customers WHERE country = 'Thailand';"> DELETE IN customers WHERE country = 'Thailand';<br><br>
                 <input type = "radio" name = "question5" value = "DROP FROM customers WHERE country = 'Thailand';"> DROP FROM customers WHERE country = 'Thailand';<br><br>
