@@ -71,7 +71,7 @@ function check()
     }
 
      // Question 1.4
-     if(question14 == "conn") {
+     if(question14 == "con") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ14").innerHTML = str;
 
@@ -85,7 +85,7 @@ function check()
     }
 
     // Question 2.1
-    if(question21 == "success") {
+    if(question21 == "text") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ21").innerHTML = str;
 
@@ -99,7 +99,7 @@ function check()
     }
 
     // Question 2.2
-    if(question22 == "JSON") {
+    if(question22 == "delete.php") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ22").innerHTML = str;
 
@@ -114,7 +114,7 @@ function check()
 
 
     // Question 2.3
-    if(question23 == "statusCode") {
+    if(question23 == "url") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ23").innerHTML = str;
 
@@ -128,7 +128,7 @@ function check()
     }
 
     // Question 2.4
-    if(question24 == "remove") {
+    if(question24 == "id") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
         document.getElementById("checkQ24").innerHTML = str;
 
@@ -144,8 +144,8 @@ function check()
     // Question 3
     if(question3 == "DELETE") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ3").innerHTML = str;
-    correct3 = 2;
+        document.getElementById("checkQ3").innerHTML = str;
+        correct3 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ3").innerHTML = str;
@@ -154,8 +154,8 @@ function check()
     // Question 4
     if(question4 == "DELETE FROM table_name;") {
         str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ4").innerHTML = str;
-    correct4 = 2;
+        document.getElementById("checkQ4").innerHTML = str;
+        correct4 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ4").innerHTML = str;
@@ -163,9 +163,9 @@ function check()
 
     // Question 5
     if(question5 == "DELETE FROM customers WHERE country = 'Thailand';") {
-    str = "<font size='3' color='green'>ถูกต้อง</font>";
-    document.getElementById("checkQ5").innerHTML = str;
-    correct5 = 2;
+        str = "<font size='3' color='green'>ถูกต้อง</font>";
+        document.getElementById("checkQ5").innerHTML = str;
+        correct5 = 2;
     } else {
         str = "<font size='3' color='red'>ไม่ถูกต้อง</font>";
         document.getElementById("checkQ5").innerHTML = str;

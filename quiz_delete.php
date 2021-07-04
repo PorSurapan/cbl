@@ -74,45 +74,41 @@
         
             <form id="quiz" name="quiz">
                
-                <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อเลือกข้อมูลและแสดงข้อมูลในฐานข้อมูลใหม่ที่ชื่อว่า studyphp<br><br></h5>
+                <h5><br>1) เขียนคำสั่งที่ถูกต้องเพื่อลบข้อมูลในฐานข้อมูล studyphp<br><br></h5>
                 <h6>&#60;?php<br></h6>
-                <h6 style="text-indent: 2.5em;">$connect = new mysqli('localhost', 'root', '  ' , 'studyphp');</p> 
-                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"> <input type="text" id="textBox12" name="question12"> profiles WHERE id = '  1 ';</h6>
-                <p id="checkQ11"></p><p id="checkQ12"></p>
-                <h6>if ($conn-> <input type="text" id="textBox13" name="question13"> ($sql) == TRUE) {</h6>
-                <p id="checkQ13">
-                <h6 style="text-indent: 2.5em;">echo "Record updated successfully";</h6>
-                <h6>{ else {</h6> 
-                <h6 style="text-indent: 2.5em;">echo "Error updating record: " . $conn ->error;<br>}<br>$<input type="text" id="textBox14" name="question14"> ->close();<br>?></h6>
-                <p id="checkQ14">
+                <h6 style="text-indent: 2.5em;">$con = mysqli_connect('localhost', 'root', '  ' , 'studyphp');</p> 
+                <h6 style="text-indent: 2.5em;">$sql = " <input type="text" id="textBox11" name="question11"><span id="checkQ11"></span> <input type="text" id="textBox12" name="question12"><span id="checkQ12"></span> profiles WHERE id = '  1 ';</h6>
+                <h6 style="text-indent: 2.5em;">if ($con-> <input type="text" id="textBox13" name="question13"><span id="checkQ13"></span> ($sql) == TRUE) {</h6>
+                <h6 style="text-indent: 5em;">echo "Record deleted successfully";</h6>
+                <h6 style="text-indent: 2.5em;">} else {</h6> 
+                <h6 style="text-indent: 5em;">echo "Error deleting record: " . $con ->error;<br></h6>
+                <h6 style="text-indent: 2.5em;">}<br></h6>
+                <h6 style="text-indent: 2.5em;">$<input type="text" id="textBox14" name="question14"><span id="checkQ14"></span> ->close();<br>?></h6>
                 <br>
 
-                <h5><br>2) เขียนคำสั่งที่ถูกต้องเพื่อใช้ ajax แก้ไขข้อมูลจากไฟล์ delete_ajax.php<br><br></h5>
-                <h6>$.ajax({<br></h6>
-                <h6 style="text-indent: 2.5em;">url: "delete_ajax.php",</h6>  
-                <h6 style="text-indent: 2.5em;">type: "POST",</h6>
-                <h6 style="text-indent: 2.5em;">cache: false,</h6>
-                <h6 style="text-indent: 2.5em;">data:{</h6>
-                <h6 style="text-indent: 3em;">username: $(this).attr("data-username")</h6>
-                <h6 style="text-indent: 2.5em;">},</h6>
-                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox21" name="question21"> : function(dataResult){</h6>
-                <p id="checkQ21"></p>
-                <h6 style="text-indent: 3em;">var dataResult = <input type="text" id="textBox22" name="question22"> .parse(dataResult);</h6>
-                <p id="checkQ22"></p>
-                <h6 style="text-indent: 3em;">if(dataResult. <input type="text" id="textBox23" name="question23"> ==200){</h6>
-                <p id="checkQ23"></p>
-                <h6 style="text-indent: 3.5em;">$ele.fadeOut(). <input type="text" id="textBox24" name="question24"> ()</h6>
-                <p id="checkQ24"></p>
-                <h6 style="text-indent: 3em;">}</h6>
-                <h6 style="text-indent: 2.5em;">}<br>});</h6>
-                <br>
+                <h5><br>2) เขียนคำสั่งที่ถูกต้องเพื่อใช้ ajax ช่วยในการลบข้อมูลร่วมกับไฟล์ในข้อ 1 โดยรับค่า id (กำหนดชื่อไฟล์ของข้อ 1 คือ delete.php) และให้ alert ข้อความที่ response กลับมา<br><br></h5>
+                <h6>function stateChange() {<br></h6>
+                <h6 style="text-indent: 2.5em;">if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {</h6>  
+                <h6 style="text-indent: 5em;">var text = xmlHttp.responseText;</h6>
+                <h6 style="text-indent: 5em;">alert(<input type="text" id="textBox21" name="question21"><span id="checkQ21"></span>);</h6>
+                <h6 style="text-indent: 2.5em;">}</h6>
+                <h6>}<br><br></h6>
+                <h6>function deleteUser(id) {<br></h6>
+                <h6 style="text-indent: 2.5em;">createXMLHttpRequest();<br></h6>
+                <h6 style="text-indent: 2.5em;">xmlHttp.onreadystatechange = stateChange;<br></h6>
+                <h6 style="text-indent: 2.5em;">var url = "<input type="text" id="textBox22" name="question22"><span id="checkQ22"></span>";<br></h6>
+                <h6 style="text-indent: 2.5em;"><input type="text" id="textBox23" name="question23"><span id="checkQ23"></span> = url + "?id=" + <input type="text" id="textBox24" name="question24"><span id="checkQ24"></span>;<br></h6>
+                <h6 style="text-indent: 2.5em;">xmlHttp.open("GET", url, true);<br></h6>
+                <h6 style="text-indent: 2.5em;">xmlHttp.send(null);<br></h6>
+                <h6>}</h6>
+                <br><br>
                 
                 <h5><br>3) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบข้อมูลในตาราง<br><br></h5>
                 <input type = "radio" name = "question3" value = "SELECT"> SELECT<br><br>
                 <input type = "radio" name = "question3" value = "UPDATE"> UPDATE<br><br>
                 <input type = "radio" name = "question3" value = "DELETE"> DELETE<br><br>
                 <input type = "radio" name = "question3" value = "DROP"> DROP<br><br>
-                <p id="checkQ5"></p>
+                <p id="checkQ3"></p>
                 <br>
 
                 <h5><br>4) ถ้าต้องการลบข้อมูลทั้งหมดในตารางควรใช้คำสั่ง SQL ใด<br><br></h5>
@@ -120,7 +116,7 @@
                 <input type = "radio" name = "question4" value = "DROP FROM table_name;"> DROP FROM table_name;<br><br>
                 <input type = "radio" name = "question4" value = "DELETE IN table_name;"> DELETE IN table_name;<br><br>
                 <input type = "radio" name = "question4" value = "DROP IN table_name;"> DROP IN table_name;<br><br>
-                <p id="checkQ3"></p>
+                <p id="checkQ4"></p>
                 <br>
 
                 <h5><br>5) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อทำการลบตาราง customers เมื่อคอลัมน์ country เท่ากับ Thailand<br><br></h5>
@@ -128,7 +124,7 @@
                 <input type = "radio" name = "question5" value = "DELETE IN customers WHERE country = 'Thailand';"> DELETE IN customers WHERE country = 'Thailand';<br><br>
                 <input type = "radio" name = "question5" value = "DROP FROM customers WHERE country = 'Thailand';"> DROP FROM customers WHERE country = 'Thailand';<br><br>
                 <input type = "radio" name = "question5" value = "DELETE FROM customers WHERE country = 'Thailand';"> DELETE FROM customers WHERE country = 'Thailand';<br><br>
-                <p id="checkQ4"></p>
+                <p id="checkQ5"></p>
                 <br>
 
                 <h5><br>6) เลือกคำสั่ง SQL ที่ถูกต้องเพื่อลบข้อมูลในตารางที่มีเงื่อนไขสองเงื่อนไข<br><br></h5>
