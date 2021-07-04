@@ -12,7 +12,7 @@
         $d1 = 0;
     } else {
         $design1 = "ทำแล้ว";
-        $d1 = 13;
+        $d1 = 7;
     }
     
     $sql = "SELECT user_id FROM designpost WHERE user_id = " . $id;
@@ -22,7 +22,7 @@
         $d2 = 0;
     } else {
         $design2 = "ทำแล้ว";
-        $d2 = 13;
+        $d2 = 7;
     }
 
 
@@ -34,7 +34,7 @@
         $c1 = 0;
     } else {
         $connect1 = "ทำแล้ว";
-        $c1 = 13;
+        $c1 = 7;
     }
     
     $sql = "SELECT user_id FROM connectpost WHERE user_id = " . $id;
@@ -44,7 +44,7 @@
         $c2 = 0;
     } else {
         $connect2 = "ทำแล้ว";
-        $c2 = 13;
+        $c2 = 7;
     }
 
     // Insert
@@ -55,7 +55,7 @@
         $i1 = 0;
     } else {
         $insert1 = "ทำแล้ว";
-        $i1 = 13;
+        $i1 = 7;
     }
 
     $sql = "SELECT user_id FROM insertpost WHERE user_id = " . $id;
@@ -65,7 +65,7 @@
         $i2 = 0;
     } else {
         $insert2 = "ทำแล้ว";
-        $i2 = 13;
+        $i2 = 7;
     }
 
     // Display
@@ -76,7 +76,7 @@
         $p1 = 0;
     } else {
         $display1 = "ทำแล้ว";
-        $p1 = 13;
+        $p1 = 7;
     }
 
     $sql = "SELECT user_id FROM displaypost WHERE user_id = " . $id;
@@ -86,7 +86,7 @@
         $p2 = 0;
     } else {
         $display2 = "ทำแล้ว";
-        $p2 = 13;
+        $p2 = 7;
     }
 
     // Edit
@@ -97,7 +97,7 @@
         $e1 = 0;
     } else {
         $edit1 = "ทำแล้ว";
-        $e1 = 13;
+        $e1 = 7;
     }
 
     $sql = "SELECT user_id FROM editpost WHERE user_id = " . $id;
@@ -107,7 +107,7 @@
         $e2 = 0;
     } else {
         $edit2 = "ทำแล้ว";
-        $e2 = 13;
+        $e2 = 7;
     }
 
     // Delete
@@ -118,7 +118,7 @@
         $t1 = 0;
     } else {
         $delete1 = "ทำแล้ว";
-        $t1 = 13;
+        $t1 = 7;
     }
 
     $sql = "SELECT user_id FROM deletepost WHERE user_id = " . $id;
@@ -128,7 +128,7 @@
         $t2 = 0;
     } else {
         $delete2 = "ทำแล้ว";
-        $t2 = 13;
+        $t2 = 7;
     }
 
     // Final Exam
@@ -143,7 +143,7 @@
             $point = $row['point'];
         }
         $final = "ทำแล้ว";
-        $f = 22;
+        $f = 16;
     }
 
     // Progress

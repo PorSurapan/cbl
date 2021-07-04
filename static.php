@@ -33,33 +33,50 @@
 
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
+            <!-- php -->
+            <?php include('staticDatabase.php'); ?>
+            
 			<h2 class="mb-4">สถิติ</h2>
+            <h4>จำนวนผู้เรียนทั้งหมด <?php echo $allUser ?> คน</h4>
+            <br><hr>
 
-            <div id="piechart"></div>
-            <script type="text/javascript">
-                // Load google charts
-                google.charts.load('current', {'packages':['corechart']});
-                google.charts.setOnLoadCallback(drawChart);
-
-                // Draw the chart and set the chart values
-                function drawChart() {
-                    var data = google.visualization.arrayToDataTable([
-                        ['Task', 'Hours per Day'],
-                        ['Work', 8],
-                        ['Eat', 2],
-                        ['TV', 4],
-                        ['Gym', 2],
-                        ['Sleep', 8]
-                    ]);
-
-                    // Optional; add a title and set the width and height of the chart
-                    var options = {'title':'ผู้เรียน', 'width':550, 'height':400};
-
-                    // Display the chart inside the <div> element with id="piechart"
-                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                    chart.draw(data, options);
-                }
-            </script>
+            <!-- graph -->
+            <?php include('staticGraph.php'); ?>
+            
+            <table width="100%">
+                <tr>
+                    <td><div id="piechart_designpre"></div></td>
+                    <td><div id="piechart_designpost"></div></td>
+                </tr>
+            </table>
+            <hr>
+            <table width="100%">
+                <tr>
+                    <td><div id="piechart_connectpre"></div></td>
+                    <td><div id="piechart_connectpost"></div></td>
+                </tr>
+            </table>
+            <hr>
+            <table width="100%">
+                <tr>
+                    <td><div id="piechart_insertpre"></div></td>
+                    <td><div id="piechart_insertpost"></div></td>
+                </tr>
+            </table>
+            <hr>
+            <table width="100%">
+                <tr>
+                    <td><div id="piechart_displaypre"></div></td>
+                    <td><div id="piechart_displaypost"></div></td>
+                </tr>
+            </table>
+            <hr>
+            <table width="100%">
+                <tr>
+                    <td><div id="piechart_editpre"></div></td>
+                    <td><div id="piechart_editpost"></div></td>
+                </tr>
+            </table>
 			
 		</div>
 	</div>
