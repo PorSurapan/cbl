@@ -1,8 +1,7 @@
 <?php
 	session_start();
 
-	$sidebar = false;
-	if(isset($_SESSION['s_username']) && $_SESSION['s_username'] == 'Admin' && $_SESSION['logged'] == true) {
+	if(isset($_SESSION['s_id']) && $_SESSION['s_username'] == 'Admin' && $_SESSION['logged'] == true) {
 		// include('');
     } else {
         echo '<script type="text/javascript">';
@@ -14,7 +13,7 @@
 <html lang="th">
 
 <head>
-	<title>Computer-Based Learning</title>
+	<title>Dashboard Admin - Database Management with PHP</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -33,9 +32,49 @@
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
 			<h2 class="mb-4">Admin Dashboard</h2>
-			<h4>
-				This is home page of admin dashboard
-			</h4>
+			<br><br>
+			<table width="100%">
+                <tr>
+                    <td>
+                        <h4>การออกแบบฐานข้อมูล&nbsp;&nbsp;</h4>
+                        <h6><a href="pretest_quiz_design.php">แบบทดสอบก่อนเรียน</a></h6>
+                        <h6><a href="posttest_quiz_design.php">แบบทดสอบหลังเรียน</a></h6>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <h4>การเชื่อมต่อฐานข้อมูล&nbsp;&nbsp;</h4>
+                        <h6><a href="pretest_quiz_connect.php">แบบทดสอบก่อนเรียน</a></h6>
+                        <h6><a href="posttest_quiz_connect.php">แบบทดสอบหลังเรียน</a></h6>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <h4>การเพิ่มข้อมูล&nbsp;&nbsp;</h4>
+                        <h6><a href="pretest_quiz_insert.php">แบบทดสอบก่อนเรียน</a></h6>
+                        <h6><a href="posttest_quiz_insert.php">แบบทดสอบหลังเรียน</a></h6>
+                        &nbsp;
+                    </td>
+				</tr>
+				<tr>
+                    <td>
+                        <h4>การแสดงข้อมูล&nbsp;&nbsp;</h4>
+                        <h6><a href="pretest_quiz_display.php">แบบทดสอบก่อนเรียน</a></h6>
+                        <h6><a href="posttest_quiz_display.php">แบบทดสอบหลังเรียน</a></h6>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <h4>การแก้ไขข้อมูล&nbsp;&nbsp;</h4>
+                        <h6><a href="pretest_quiz_edit.php">แบบทดสอบก่อนเรียน</a></h6>
+                        <h6><a href="posttest_quiz_edit.php">แบบทดสอบหลังเรียน</a></h6>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <h4>การลบข้อมูล&nbsp;&nbsp;</h4>
+                        <h6><a href="pretest_quiz_insert.php">แบบทดสอบก่อนเรียน</a></h6>
+                        <h6><a href="posttest_quiz_insert.php">แบบทดสอบหลังเรียน</a></h6>
+                        &nbsp;
+                    </td>
+				</tr>
+			</table>
 		</div>
 	</div>
 

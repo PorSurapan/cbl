@@ -224,7 +224,7 @@
                 
                 <ul class="collapse list-unstyled" id="pageSubmenuIntro">
                     <li>
-                        <a href="content.php">เนื้อหา</a>
+                        <a href="content.php">PHP</a>
                     </li>
                     <li>
                         <a href="tools.php">เตรียมเครื่องมือ</a>
