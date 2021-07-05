@@ -13,7 +13,7 @@
 <html>
 
 <head>
-	<title>Computer-Based Learning</title>
+	<title>การเพิ่มข้อมูล - Database Management with PHP</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,30 +32,27 @@
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
 			<h2 class="mb-4">การเพิ่มข้อมูลด้วย PHP</h2>
+
+			<br><center><img src="/cbl/images/ajax.gif" width="600"></center><br><br>
             <div style="text-align:center;">
-			<!-- ใส่คลิป  -->
-			    <p></p>
+                <p>
+					<iframe width="860" height="465" src="https://www.youtube.com/embed/dSy7wmczuZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</p>
             </div>
 
-            <h4>การใช้คำสั่งในการ INSERT ข้อมูลลงฐานข้อมูล</h4>
-            <h6 style="text-indent: 2.5em;">เราจะทำการสร้าง ฟอร์มรับข้อมูลไว้ในไฟล์ form.php หลังจากนั้นจะให้ส่งค่าไปยัง ไฟล์ save.php เพื่อทำการ insert ข้อมูลลงฐานข้อมูล ในการสร้างไฟล์ save.php เราจะต้องมีการเชื่อมต่อกับฐานข้อมูลขึ้นมาก่อน connect.php  เมื่อทำการ insert จะนำข้อมูลไปแสดง ในหน้า list.php</h6>
-            <h6 style="text-indent: 2.5em;">ในตัวอย่างเราจะทำการ INSERT ข้อมูลลงใน ตาราง test สิ่งเเรกก่อนเราจะต้องทำการสร้างตารางเพื่อรับข้อมูล</h6><br>
-            
-            <img src="/cbl/images/db.png" width="800"><br><br><br>
+            <br><br><hr>
+            <h2 class="mb-4">Source Code</h2>
 
-            <h6 style="text-indent: 2.5em;">จากนั้นทำการสร้าง form ตามโครงสร้างของตาราง</h6>
-            <h6 style="text-indent: 2.5em;">เราจะเห็นว่ามีการ ส่งค่า  method="post" ไปยังไฟล์ save.php ส่วน enctype="multipart/form-data เป็นการกำหนดให้ฟอร์มนี้มีการเก็บข้อมูลได้หลายประเภท</h6><br>
-            <img src="/cbl/images/form.png" width="800"><br><br><br>
+			<h4>PHP</h4>
+			<a href="/cbl/images/insert/data_form.html" download>data_form.html</a><br>
+			<a href="/cbl/images/insert/insert.php" download>insert.php</a><br><br>
+			<h4>PHP & Javascript AJAX</h4>
+			<a href="/cbl/images/insert/data_form_ajax.html" download>data_form_ajax.html</a><br>
+			<a href="/cbl/images/insert/insertAJAX.js" download>insertAJAX.js</a><br>
+			<a href="/cbl/images/insert/insert_ajax.php" download>insert_ajax.php</a>
 
-            <h6 style="text-indent: 2.5em;">ก่อนจะไปทำงานที่ไฟล์ save.php จะต้องทำการเชื่อมต่อกับ database เสียก่อน</h6>
-            <img src="/cbl/images/connect_db2.PNG" width="800"><br><br><br>
-
-            <h6 style="text-indent: 2.5em;">จากนั้นให้สร้างไฟล์ save.php โดยใส่ require_once'connect.php' เพื่อใช้งานฐานข้อมูล</h6>
-            <h6 style="text-indent: 2.5em;">คำสั่ง INSERT INTO ก็คือการเพิ่มข้อมูลจากฟอร์มลงฐานข้อมูลนั่นเอง</h6>
-            <img src="/cbl/images/insert.PNG" width="800"><br><br><br>
-
-
-           
+		</div>
+	</div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>

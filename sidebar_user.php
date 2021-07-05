@@ -241,7 +241,7 @@
                         <a href="quiz_design.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="intro_phpmyadmin.php">ความรู้เบื้องต้น phpMyAdmin</a>
+                        <a href="intro_phpmyadmin.php">การออกแบบฐานข้อมูล</a>
                     </li>
                     <li>
                         <a href="quiz_design_post.php">แบบทดสอบหลังเรียน</a>
@@ -275,10 +275,7 @@
                         <a href="quiz_insert.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="add_data_php.php">เพิ่มข้อมูลด้วย PHP</a>
-                    </li>
-                    <li>
-                        <a href="add_data_ajax.php">เพิ่มข้อมูลด้วย PHP & AJAX</a>
+                        <a href="add_data_php.php">การเพิ่มข้อมูล</a>
                     </li>
                     <li>
                         <a href="quiz_insert_post.php">แบบทดสอบหลังเรียน</a>
@@ -295,10 +292,7 @@
                         <a href="quiz_display.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="show_data_php.php">แสดงข้อมูลด้วย PHP</a>
-                    </li>
-                    <li>
-                        <a href="show_data_ajax.php">แสดงข้อมูลด้วย PHP & AJAX</a>
+                        <a href="show_data_php.php">การแสดงข้อมูล</a>
                     </li>
                     <li>
                         <a href="quiz_display_post.php">แบบทดสอบหลังเรียน</a>
@@ -315,10 +309,7 @@
                         <a href="quiz_edit.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="update_data_php.php">แก้ไขข้อมูลด้วย PHP</a>
-                    </li>
-                    <li>
-                        <a href="update_data_ajax.php">แก้ไขข้อมูลด้วย PHP & AJAX</a>
+                        <a href="update_data_php.php">การแก้ไขข้อมูล</a>
                     </li>
                     <li>
                         <a href="quiz_edit_post.php">แบบทดสอบหลังเรียน</a>
@@ -335,10 +326,7 @@
                         <a href="quiz_delete.php">แบบทดสอบก่อนเรียน</a>
                     </li>
                     <li>
-                        <a href="del_data_php.php">ลบข้อมูลด้วย PHP</a>
-                    </li>
-                    <li>
-                        <a href="del_data_ajax.php">ลบข้อมูลด้วย PHP & AJAX</a>
+                        <a href="del_data_php.php">การลบข้อมูล</a>
                     </li>
                     <li>
                         <a href="quiz_delete_post.php">แบบทดสอบหลังเรียน</a>

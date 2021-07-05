@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="utf8">
+</head>
+
+<body>
+    <center>
+        <h2>Form PHP</h2>
+    </center>
+    <form action="insert.php" method="POST">
+        <table align="center" width="30%">
+            <tr>
+                <td>ชื่อ</td>
+                <td><input type="text" id="firstName" name="firstName" placeholder="First name" required></td>
+            </tr>
+            <tr>
+                <td>นามสกุล</td>
+                <td><input type="text" id="lastName" name="lastName" placeholder="Last name" required></td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td><input type="text" id="address" name="address" placeholder="Address" required></td>
+            </tr><tr>
+                <td>วันเกิด</td>
+                <td><input type="date" id="birthDay" name="birthDay" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" id="submit" value="บันทึก"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
