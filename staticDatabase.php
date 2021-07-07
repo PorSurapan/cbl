@@ -136,6 +136,30 @@
             $edit_post_fail = $edit_post_fail + 1;
     }
 
+    // Delete Pre-Test -------------------------------------
+    $sql = "SELECT pass FROM deletepre";
+    $rs = $con->query($sql);
+    $delete_pre_pass = 0;
+    $delete_pre_fail = 0;
+    while($row = $rs->fetch_assoc()) {
+        if($row['pass'] == "ผ่าน")
+            $delete_pre_pass = $delete_pre_pass + 1;
+        else
+            $delete_pre_fail = $delete_pre_fail + 1;
+    }
+
+    // Delete Post-Test
+    $sql = "SELECT pass FROM deletepost";
+    $rs = $con->query($sql);
+    $delete_post_pass = 0;
+    $delete_post_fail = 0;
+    while($row = $rs->fetch_assoc()) {
+        if($row['pass'] == "ผ่าน")
+            $delete_post_pass = $delete_post_pass + 1;
+        else
+            $delete_post_fail = $delete_post_fail + 1;
+    }
+
 
     // Final Test
     $sql = "SELECT pass FROM posttest";

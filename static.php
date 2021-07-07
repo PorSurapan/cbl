@@ -80,6 +80,13 @@
             <hr>
             <table width="100%">
                 <tr>
+                    <td><div id="piechart_deletepre"></div></td>
+                    <td><div id="piechart_deletepost"></div></td>
+                </tr>
+            </table>
+            <hr>
+            <table width="100%">
+                <tr>
                     <td><div id="piechart_posttest"></div></td>
                 </tr>
             </table>

@@ -39,7 +39,7 @@
 			<br><a href="https://colorlib.com/wp/template/bootstrap-sidebar-02/">https://colorlib.com/wp/template/bootstrap-sidebar-02/</a>
 			<br><a href="https://stackoverflow.com/">https://stackoverflow.com/</a>
 			<br><a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
-			<br><a href="https://qr.ae/pG4IIs"></a>
+			<br><a href="https://qr.ae/pG4IIs">https://qr.ae/pG4IIs</a>
 			<br><a href=""></a>
 			<br><a href=""></a>
 			<br><a href=""></a>
