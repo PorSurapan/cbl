@@ -37,6 +37,16 @@
 			    <p></p>
             </div>
 
+			<br><br><hr>
+            <h2 class="mb-4">Source Code</h2>
+
+			<h4>PHP</h4>
+			<a href="/cbl/images/display/index.php" download>index.php</a><br>
+			<h4>PHP & Javascript AJAX</h4>
+			<a href="/cbl/images/display/view.php" download>view.php</a><br>
+			<a href="/cbl/images/display/showName.js" download>showName.js</a><br>
+			<a href="/cbl/images/display/name.php" download>name.php</a>
+
             
 
            
