@@ -34,7 +34,9 @@
 			<h2 class="mb-4">การแก้ไขข้อมูลด้วย PHP</h2>
             <div style="text-align:center;">
 			<!-- ใส่คลิป  -->
-			    <p></p>
+			    <p>
+					<iframe width="1009" height="538" src="https://www.youtube.com/embed/8gTnpgZ7bE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</p>
             </div>
 
 			<br><br><hr>
