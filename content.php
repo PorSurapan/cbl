@@ -31,7 +31,7 @@
 
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5">
-			<h2 class="mb-4">เนื้อหา</h2>
+			<h2 class="mb-4">ความรู้เบื้องต้น</h2>
 
             <h4><br>PHP คืออะไร?</h4>
             <h6 style="text-indent: 2.5em;">PHP เป็นคำย่อของ "PHP: Hypertext Preprocessor"</h6>
