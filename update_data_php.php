@@ -41,14 +41,14 @@
             <h2 class="mb-4">Source Code</h2>
 
 			<h4>PHP</h4>
-			<a href="/cbl/images/display/form_edit.php" download>form_edit.php</a><br>
-			<a href="/cbl/images/display/edit.php" download>edit.php</a><br>
-			<a href="/cbl/images/display/save_edit.php" download>save_edit.php</a><br>
+			<a href="/cbl/images/edit/form_edit.php" download>form_edit.php</a><br>
+			<a href="/cbl/images/edit/edit.php" download>edit.php</a><br>
+			<a href="/cbl/images/edit/save_edit.php" download>save_edit.php</a><br>
 			<h4>PHP & Javascript AJAX</h4>
-			<a href="/cbl/images/display/form_edit_ajax.php" download>form_edit_ajax.php</a><br>
-			<a href="/cbl/images/display/edit_ajax.php" download>edit_ajax.php</a><br>
-			<a href="/cbl/images/display/ajax_edit.js" download>ajax_edit.js</a><br>
-			<a href="/cbl/images/display/save_ajax_edit.js" download>save_ajax_edit.php</a>
+			<a href="/cbl/images/edit/form_edit_ajax.php" download>form_edit_ajax.php</a><br>
+			<a href="/cbl/images/edit/edit_ajax.php" download>edit_ajax.php</a><br>
+			<a href="/cbl/images/edit/ajax_edit.js" download>ajax_edit.js</a><br>
+			<a href="/cbl/images/edit/save_ajax_edit.js" download>save_ajax_edit.php</a>
 
             
 
