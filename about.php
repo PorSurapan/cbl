@@ -40,8 +40,8 @@
 			<br><a href="https://stackoverflow.com/">https://stackoverflow.com/</a>
 			<br><a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
 			<br><a href="https://qr.ae/pG4IIs">https://qr.ae/pG4IIs</a>
-			<br><a href=""></a>
-			<br><a href=""></a>
+			<br><a href="https://dev.to/supaluckn/php-mysqli-4ke6">https://dev.to/supaluckn/php-mysqli-4ke6</a>
+			<br><a href="https://www.studentstutorial.com/">https://www.studentstutorial.com/</a>
 			<br><a href=""></a>
 			<br><a href=""></a>
 
