@@ -35,7 +35,7 @@
             <div style="text-align:center;">
 			<!-- ใส่คลิป  -->
 			    <p>
-					<iframe width="956" height="538" src="https://www.youtube.com/embed/UpvvTcbboWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="860" height="465" src="https://www.youtube.com/embed/UpvvTcbboWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
             </div>
 
