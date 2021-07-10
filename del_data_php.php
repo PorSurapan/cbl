@@ -34,10 +34,21 @@
 			<h2 class="mb-4">การลบข้อมูลด้วย PHP</h2>
             <div style="text-align:center;">
 			<!-- ใส่คลิป  -->
-			    <p></p>
+			    <p><iframe width="860" height="465" src="https://www.youtube.com/embed/_J3m3g-EDxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             </div>
 
-            
+			<br><br><hr>
+            <h2 class="mb-4">Source Code</h2>
+
+            <h4>PHP</h4>
+			<a href="/cbl/images/delete/form_del.php" download>form_del.php</a><br>
+			<a href="/cbl/images/delete/save_del.php" download>save_del.php</a><br><br>
+			<h4>PHP & Javascript AJAX</h4>
+			<a href="/cbl/images/delete/form_del_ajax.php" download>form_del_ajax.php</a><br>
+			<a href="/cbl/images/delete/del_ajax.php" download>del_ajax.php</a><br>
+			<a href="/cbl/images/delete/ajax_del.js" download>ajax_del.js</a><br>
+			<a href="/cbl/images/delete/save_del_edit.js" download>save_del_edit.php</a>
+
 
            
 
